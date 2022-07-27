@@ -1,0 +1,359 @@
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+.overview-page {
+  padding-top: 180px;
+}
+
+/* Header style */
+.header {
+  padding: 24px 0;
+}
+.header_search form {
+  width: 340px;
+}
+.header_search form input {
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+  padding: 19px 57px 19px 26px;
+  filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 0.15));
+}
+.header_search form button {
+  right: 11px;
+  width: 35px;
+  height: 35px;
+}
+.header_search form button img {
+  width: 20px;
+}
+.header_account--notification {
+  margin-right: 5px;
+}
+.header_account--notification .header_notification {
+  padding-top: 25px;
+}
+.header_account--notification .header_notification-area {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 13px;
+}
+.header_account--notification_link {
+  width: 50px;
+  height: 50px;
+}
+.header_account--notification_link svg {
+  height: 25px;
+}
+.header_account--balance {
+  margin-right: 16px;
+}
+.header_account--balance_link {
+  border-radius: 20px;
+  padding: 8px 19px;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+}
+.header_account--balance_dropdown {
+  padding-top: 14px;
+}
+.header_account--balance_dropdown .balance_list {
+  border-radius: 13px;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+  min-width: 140px;
+}
+.header_account--balance_dropdown .balance_list--item:last-of-type a {
+  padding-bottom: 17px;
+}
+.header_account--balance_dropdown .balance_list--item:after {
+  left: 13px;
+  height: 0.5px;
+  width: 111px;
+}
+.header_account--balance_dropdown .balance_list--item a {
+  padding: 14px 17px 14px 20px;
+  font-size: 15px;
+}
+
+.white_block {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+}
+
+.ui-datepicker-header {
+  margin-bottom: 9px;
+}
+.ui-datepicker-title {
+  font-size: 12px;
+  line-height: 15px;
+}
+.ui-datepicker-prev {
+  right: 22px;
+  width: 6px;
+  height: 6px;
+}
+.ui-datepicker-next {
+  width: 6px;
+  height: 6px;
+}
+.ui-datepicker-calendar thead span {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: -0.4px;
+  margin-bottom: 10px;
+}
+.ui-datepicker-calendar tbody .ui-state-default {
+  font-size: 10px;
+  width: 21px;
+  height: 21px;
+  border: 2px solid transparent;
+}
+.ui-datepicker-calendar tbody .with-event a {
+  border: 2px solid #5E97FF;
+}
+
+/* Main info */
+.main_info {
+  margin-bottom: 43px;
+}
+.main_info--small {
+  padding: 14px 18px;
+}
+.main_info--small_title {
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.4px;
+  margin-bottom: 6px;
+}
+.main_info--small_img {
+  top: 14px;
+  right: 16px;
+  width: 26px;
+  height: 26px;
+}
+.main_info--small_number {
+  font-size: 29px;
+  line-height: 38px;
+  letter-spacing: -0.4px;
+  margin-bottom: 8px;
+}
+.main_info--small_descr {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.4px;
+}
+.main_info--small_descr .direction {
+  margin-right: 5px;
+}
+.main_info--small_descr .direction-icon {
+  width: 20px;
+  margin-right: 5px;
+}
+.main_info.first-info {
+  grid-gap: 30px;
+}
+.main_info.second-info {
+  grid-gap: 25px;
+}
+.main_info .user_name {
+  padding: 27px 47px 27px 27px;
+}
+.main_info .user_name--date {
+  font-size: 19px;
+  margin-bottom: 9px;
+}
+.main_info .user_name--text {
+  font-size: 39px;
+}
+.main_info .user_name--text img {
+  width: 37px;
+  margin-left: 10px;
+}
+.main_info .user_name--completeness {
+  border-top: 0.5px solid #D6D6D6;
+  margin-top: 14px;
+  padding-top: 17px;
+}
+.main_info .user_name--completeness_title {
+  margin-bottom: 13px;
+  font-size: 15px;
+  letter-spacing: -0.4px;
+}
+.main_info .user_name--completeness .progress {
+  border-radius: 24px;
+  height: 11px;
+  width: 430px;
+}
+.main_info .user_name--completeness .progress_inner {
+  border-radius: 24px;
+}
+.main_info .user_name--completeness .progress_percent {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+}
+.main_info .user-schedule {
+  padding: 20px 26px 28px;
+  grid-gap: 32px;
+}
+.main_info .user-schedule--coming .coming_title {
+  font-size: 17px;
+  letter-spacing: -0.4px;
+  margin-bottom: 17px;
+}
+.main_info .user-schedule--coming .coming_title--descr {
+  font-size: 16px;
+  line-height: 20px;
+}
+.main_info .user-schedule--coming .coming_list {
+  max-height: 155px;
+}
+.main_info .user-schedule--coming .coming_list--item {
+  padding-right: 8px;
+  margin-bottom: 19px;
+}
+.main_info .user-schedule--coming .coming_list--item_img {
+  width: 43px;
+  height: 43px;
+  margin-right: 12px;
+  border-radius: 5px;
+}
+.main_info .user-schedule--coming .coming_list--item_title {
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 7px;
+}
+.main_info .user-schedule--coming .coming_list--item_details {
+  font-size: 14px;
+  line-height: 17px;
+}
+.main_info .user-schedule--coming .coming_list--item_details .place {
+  padding-left: 15px;
+  margin-left: 10px;
+  min-width: 74px;
+}
+.main_info .user-schedule--coming .coming_list--item_details .place:before {
+  width: 10px;
+  height: 14px;
+}
+.main_info .user-schedule--calendar {
+  max-width: 165px;
+}
+.main_info .user_earnings {
+  padding: 22px;
+}
+.main_info .user_earnings--closed {
+  padding: 125px 122px 60px 47px;
+}
+.main_info .user_earnings--closed_img {
+  top: 50px;
+  left: 47px;
+  width: 35px;
+  height: 35px;
+}
+.main_info .user_earnings--title {
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: -0.4px;
+  margin-bottom: 15px;
+}
+.main_info .user_earnings--title_descr {
+  font-size: 17px;
+  line-height: 21px;
+}
+
+.user_categories {
+  padding: 25px 25px 30px;
+}
+.user_categories--edit {
+  top: 25px;
+  right: 25px;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #5E97FF;
+}
+.user_categories--edit img {
+  width: 16px;
+  height: 16px;
+}
+.user_categories--img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 14px;
+}
+.user_categories--name {
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  margin-bottom: 13px;
+}
+.user_categories--list {
+  border-top: 0.5px solid #D6D6D6;
+  padding: 14px 0 0;
+}
+.user_categories--list ::-webkit-scrollbar-button {
+  max-height: 180px;
+}
+.user_categories--list.opened ul {
+  height: 180px;
+}
+.user_categories--list_title {
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.4px;
+  margin-bottom: 14px;
+}
+.user_categories--list ul {
+  height: 172px;
+}
+.user_categories--list_item span {
+  padding: 8px 13px;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.4px;
+  border-radius: 50px;
+  margin-bottom: 11px;
+}
+.user_categories--list_more {
+  font-size: 13px;
+  line-height: 16px;
+  bottom: 18px;
+  right: 18px;
+}
+
+/* New to Geeks Slider */
+.gigs_steps {
+  margin: 86px 0 168px;
+  border-radius: 15px;
+}
+.gigs_steps--item {
+  height: 262px;
+  padding: 42px 51px;
+  font-size: 25px;
+  line-height: 38px;
+}
+.gigs_steps--item_title {
+  font-size: 37px;
+  line-height: 38px;
+  margin-bottom: 11px;
+}
+
+.slick-dots {
+  bottom: 25px;
+  grid-gap: 16px;
+}
+.slick-dots li {
+  width: 13px;
+  height: 13px;
+}
+
+/*# sourceMappingURL=overview_max.css.map */
