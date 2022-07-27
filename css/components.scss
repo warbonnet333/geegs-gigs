@@ -215,9 +215,14 @@ $px: 0.0694;
 }
 
 .page_menu {
-  margin-top: 105px;
+  margin-top: 0;
   padding: 12px 0;
   border-bottom: 0.5px solid #BBBBBB;
+  position: fixed;
+  top: 105px;
+  width: 100%;
+  background: #fff;
+  z-index: 3;
 
   &--list {
     display: flex;
@@ -227,12 +232,20 @@ $px: 0.0694;
     font-size: 15px;
     line-height: 1.2;
     color: #000;
+    grid-gap: 3px;
 
     &_item {
       a {
-        padding: 13px 25px;
+        padding: 13px 22px;
         color: inherit;
         cursor: pointer;
+        transition: all 0.4s;
+        border-radius: 30px;
+        border: 1px solid transparent;
+
+        &:hover {
+          border-color: #201F28;
+        }
       }
     }
   }
@@ -293,7 +306,7 @@ $px: 0.0694;
   background: #fff;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
   border-radius: 27px;
-  padding: 13px 18px;
+  padding: 13px 18px 11px;
   min-width: 182px;
   border: 1px solid transparent;
   transition: all 0.4s;
@@ -482,16 +495,19 @@ $px: 0.0694;
   }
 
   .page_menu {
-    margin-top: 105vw * $px;
+    margin-top: 0;
     padding: 12vw * $px 0;
     border-bottom: 0.5px solid #BBBBBB;
+    top: 105vw * $px;
 
     &--list {
       font-size: 15vw * $px;
+      grid-gap: 3vw * $px;
 
       &_item {
         a {
           padding: 13vw * $px 25vw * $px;
+          border-radius: 30vw * $px;
         }
       }
     }
@@ -522,7 +538,7 @@ $px: 0.0694;
   .selectric {
     box-shadow: 0vw * $px 0vw * $px 16vw * $px rgba(0, 0, 0, 0.1);
     border-radius: 27vw * $px;
-    padding: 13vw * $px 18vw * $px;
+    padding: 13vw * $px 18vw * $px 11vw * $px;
     min-width: 182vw * $px;
     border: 1px solid transparent;
 

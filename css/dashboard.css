@@ -1,6 +1,5 @@
 .dashboard-page {
   padding-top: 171px;
-  background: #fff;
 }
 .dashboard-page .section_title {
   margin-bottom: 46px;
@@ -8,7 +7,7 @@
   line-height: 1.2;
 }
 .dashboard-page .footer {
-  background: #F5F6FA;
+  background: #fff;
   margin-top: 140px;
 }
 

@@ -4,6 +4,7 @@ $px: 0.0694;
 
 .individual-page {
   background-color: #fff;
+  padding-top: 195px;
 
   .footer {
     background-color: #F5F6FA;
@@ -214,7 +215,7 @@ $px: 0.0694;
         }
       }
 
-      &-title {
+      &_title {
         margin-bottom: 5px;
       }
 
@@ -667,7 +668,7 @@ $px: 0.0694;
 
 .cart_section {
   position: sticky;
-  top: 105px;
+  top: 170px;
   height: fit-content;
   padding: 20px 0 60px;
 
@@ -824,6 +825,10 @@ $px: 0.0694;
 }
 
 @media only screen and (max-width: 1439px) {
+  .individual-page {
+    padding-top: 195vw * $px;
+  }
+
   .individual-wrapper {
     grid-gap: 35vw * $px;
   }
@@ -907,7 +912,7 @@ $px: 0.0694;
           height: 30vw * $px;
         }
 
-        &-title {
+        &_title {
           margin-bottom: 5vw * $px;
         }
 
@@ -1136,7 +1141,7 @@ $px: 0.0694;
   }
 
   .cart_section {
-    top: 105vw * $px;
+    top: 170vw * $px;
     padding: 20vw * $px 0 60vw * $px;
 
     .user_categories {

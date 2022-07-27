@@ -769,6 +769,33 @@ body {
     border-top: 0.5px solid #D6D6D6;
     padding: 14vw * $px 0 0;
 
+    ::-webkit-scrollbar-button {
+      max-height: 180vw * $px;
+    }
+
+    &.opened {
+      .hidden {
+        display: inline-block;
+      }
+
+      ul {
+        height: 180vw * $px;
+      }
+
+      .user_categories--list_more span {
+        &:last-of-type {
+          display: block;
+        }
+        &:first-of-type {
+          display: none;
+        }
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+
     &_title {
       font-weight: 500;
       font-size: 15vw * $px;
@@ -781,6 +808,8 @@ body {
       list-style: none;
       display: flex;
       flex-flow: column;
+      height: 172vw * $px;
+      overflow: auto;
     }
 
     &_item span {
@@ -809,6 +838,12 @@ body {
       position: absolute;
       bottom: 18vw * $px;
       right: 18vw * $px;
+
+      span {
+        &:last-of-type {
+          display: none;
+        }
+      }
     }
   }
 

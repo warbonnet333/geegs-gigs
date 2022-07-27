@@ -175,9 +175,14 @@
 }
 
 .page_menu {
-  margin-top: 105px;
+  margin-top: 0;
   padding: 12px 0;
   border-bottom: 0.5px solid #BBBBBB;
+  position: fixed;
+  top: 105px;
+  width: 100%;
+  background: #fff;
+  z-index: 3;
 }
 .page_menu--list {
   display: flex;
@@ -187,11 +192,18 @@
   font-size: 15px;
   line-height: 1.2;
   color: #000;
+  grid-gap: 3px;
 }
 .page_menu--list_item a {
-  padding: 13px 25px;
+  padding: 13px 22px;
   color: inherit;
   cursor: pointer;
+  transition: all 0.4s;
+  border-radius: 30px;
+  border: 1px solid transparent;
+}
+.page_menu--list_item a:hover {
+  border-color: #201F28;
 }
 
 .section_title {
@@ -355,7 +367,7 @@
   background: #fff;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
   border-radius: 27px;
-  padding: 13px 18px;
+  padding: 13px 18px 11px;
   min-width: 182px;
   border: 1px solid transparent;
   transition: all 0.4s;
@@ -508,15 +520,18 @@
     min-width: 10.41vw;
   }
   .page_menu {
-    margin-top: 7.287vw;
+    margin-top: 0;
     padding: 0.8328vw 0;
     border-bottom: 0.5px solid #BBBBBB;
+    top: 7.287vw;
   }
   .page_menu--list {
     font-size: 1.041vw;
+    grid-gap: 0.2082vw;
   }
   .page_menu--list_item a {
     padding: 0.9022vw 1.735vw;
+    border-radius: 2.082vw;
   }
   .section_title {
     font-size: 1.8738vw;
@@ -536,7 +551,7 @@
   .selectric {
     box-shadow: 0vw 0vw 1.1104vw rgba(0, 0, 0, 0.1);
     border-radius: 1.8738vw;
-    padding: 0.9022vw 1.2492vw;
+    padding: 0.9022vw 1.2492vw 0.7634vw;
     min-width: 12.6308vw;
     border: 1px solid transparent;
   }

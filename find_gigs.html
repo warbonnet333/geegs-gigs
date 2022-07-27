@@ -7,10 +7,10 @@
 
     <link rel="stylesheet" href="./css/selectric.css">
     <link rel="stylesheet" href="./css/main.css">
-    <!--    <link rel="stylesheet" href="./css/slick.css">-->
     <link rel="stylesheet" href="./css/settings.css">
     <link rel="stylesheet" href="./css/overview/overview.css">
     <link rel="stylesheet" href="./css/components/gigs.css">
+    <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/find_gigs.css">
     <title>Geeks&Gigs</title>
 </head>
@@ -146,7 +146,7 @@
         </div>
         <div class="gigs_sub">
             <div class="gigs_sub--text">These gigs are based on your chosen categories. You can review or edit them <a
-                    href="#">here</a>.
+                    href="#" class="js-open-popup" data-popup-trigger="edit-category">here</a>.
             </div>
             <div class="gigs_sub--sort">
                 <div class="gigs_sub--sort_title">Sort by:</div>
@@ -523,6 +523,88 @@
         </div>
     </div>
 </footer>
+
+<div class="popups">
+    <div class="popups_backdrop js-popup-backdrop"></div>
+
+    <div class="popups_item edit_category js-popup" data-popup-target="edit-category">
+        <div class="user_categories--list added">
+            <div class="user_categories--list_title">My categories</div>
+            <ul>
+                <li class="user_categories--list_item">
+                        <span>New device setup
+                            <span class="remove_category"></span>
+                        </span>
+                </li>
+                <li class="user_categories--list_item">
+                        <span>Account Recovery
+                            <span class="remove_category"></span>
+                        </span>
+                </li>
+                <li class="user_categories--list_item">
+                        <span>Data Recovery
+                            <span class="remove_category"></span>
+                        </span>
+                </li>
+                <li class="user_categories--list_item">
+                        <span>Data Backups
+                            <span class="remove_category"></span>
+                        </span>
+                </li>
+                <li class="user_categories--list_item">
+                        <span>New device setup
+                            <span class="remove_category"></span>
+                        </span>
+                </li>
+                <li class="user_categories--list_item">
+                        <span>Account Recovery
+                            <span class="remove_category"></span>
+                        </span>
+                </li>
+                <li class="user_categories--list_item">
+                        <span>Data Recovery
+                            <span class="remove_category"></span>
+                        </span>
+                </li>
+            </ul>
+        </div>
+        <div class="user_categories--list new">
+            <div class="user_categories--list_title">Add a new category</div>
+            <ul>
+                <li class="user_categories--list_item">
+                        <span>Keyboard Repair
+                            <span class="remove_category"></span>
+                        </span>
+                </li>
+                <li class="user_categories--list_item">
+                        <span>Keyboard Repair
+                            <span class="remove_category"></span>
+                        </span>
+                </li>
+                <li class="user_categories--list_item">
+                        <span>Keyboard Repair
+                            <span class="remove_category"></span>
+                        </span>
+                </li>
+                <li class="user_categories--list_item">
+                        <span>Keyboard Repair
+                            <span class="remove_category"></span>
+                        </span>
+                </li>
+                <li class="user_categories--list_item">
+                        <span>Keyboard Repair
+                            <span class="remove_category"></span>
+                        </span>
+                </li>
+                <li class="user_categories--list_item">
+                        <span>Keyboard Repair
+                            <span class="remove_category"></span>
+                        </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 <script src="./js/packages/jquery1.12.4.min.js"></script>
 <script src="./js/packages/jquery-ui.min.js"></script>

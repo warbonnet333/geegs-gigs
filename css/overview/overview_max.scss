@@ -9,7 +9,9 @@
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
-
+$blue: #5E97FF;
+$red: #8F2C23;
+$px: 0.0694;
 .overview-page {
   padding-top: 180px;
 }
@@ -382,11 +384,25 @@
     border-top: 0.5px solid #D6D6D6;
     padding: 14px 0 0;
 
+    ::-webkit-scrollbar-button {
+      max-height: 180px;
+    }
+
+    &.opened {
+      ul {
+        height: 180px;
+      }
+    }
+
     &_title {
       font-size: 15px;
       line-height: 18px;
       letter-spacing: -0.4px;
       margin-bottom: 14px;
+    }
+
+    ul {
+      height: 172px;
     }
 
     &_item span {

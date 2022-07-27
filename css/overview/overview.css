@@ -737,6 +737,24 @@ body {
   border-top: 0.5px solid #D6D6D6;
   padding: 0.9716vw 0 0;
 }
+.user_categories--list ::-webkit-scrollbar-button {
+  max-height: 12.492vw;
+}
+.user_categories--list.opened .hidden {
+  display: inline-block;
+}
+.user_categories--list.opened ul {
+  height: 12.492vw;
+}
+.user_categories--list.opened .user_categories--list_more span:last-of-type {
+  display: block;
+}
+.user_categories--list.opened .user_categories--list_more span:first-of-type {
+  display: none;
+}
+.user_categories--list .hidden {
+  display: none;
+}
 .user_categories--list_title {
   font-weight: 500;
   font-size: 1.041vw;
@@ -748,6 +766,8 @@ body {
   list-style: none;
   display: flex;
   flex-flow: column;
+  height: 11.9368vw;
+  overflow: auto;
 }
 .user_categories--list_item span {
   padding: 0.5552vw 0.9022vw;
@@ -773,6 +793,9 @@ body {
   position: absolute;
   bottom: 1.2492vw;
   right: 1.2492vw;
+}
+.user_categories--list_more span:last-of-type {
+  display: none;
 }
 
 /* New to Geeks Slider */
@@ -1289,11 +1312,20 @@ body {
     border-top: 0.5px solid #D6D6D6;
     padding: 14px 0 0;
   }
+  .user_categories--list ::-webkit-scrollbar-button {
+    max-height: 180px;
+  }
+  .user_categories--list.opened ul {
+    height: 180px;
+  }
   .user_categories--list_title {
     font-size: 15px;
     line-height: 18px;
     letter-spacing: -0.4px;
     margin-bottom: 14px;
+  }
+  .user_categories--list ul {
+    height: 172px;
   }
   .user_categories--list_item span {
     padding: 8px 13px;

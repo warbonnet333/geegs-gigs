@@ -55,7 +55,7 @@
   background: #fff;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
   border-radius: 27px;
-  padding: 13px 18px;
+  padding: 13px 18px 11px;
   min-width: 182px;
   border: 1px solid transparent;
   transition: all 0.4s;
@@ -194,7 +194,7 @@
   padding: 13px 10px;
   border-bottom: 0.5px solid #D6D6D6;
   font-family: "Helvetica Neue", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   min-height: 70px;
@@ -304,7 +304,7 @@
   .gigs_sub--sort_select .selectric {
     box-shadow: 0px 0px 1.1104vw rgba(0, 0, 0, 0.1);
     border-radius: 1.8738vw;
-    padding: 0.9022vw 1.2492vw;
+    padding: 0.9022vw 1.2492vw 0.7634vw;
     min-width: 12.6308vw;
   }
   .gigs_sub--sort_select .selectric .label {

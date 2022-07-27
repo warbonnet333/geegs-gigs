@@ -13,6 +13,7 @@ class OverviewPage {
     initEvents() {
         $(document).on('click', '.js-open-popup', this.openPopup.bind(this))
         $(document).on('click', '.js-popup-backdrop, .js-close-popup', this.closePopup.bind(this))
+        $(document).on('click', '.js-more-categories', this.moreCategories.bind(this))
         document.addEventListener('keypress', (e) => (e.key === "Escape") && this.closePopup.bind(this));
     }
 
@@ -123,6 +124,14 @@ class OverviewPage {
     closePopup() {
         const target = document.querySelector('.js-popup.active');
         target && target.classList.remove('active'), toggleBackdrop(false);
+    }
+
+    moreCategories(e) {
+        e.preventDefault();
+        const btn = e.currentTarget;
+        const list = btn.closest('.user_categories--list')
+
+        list.classList.toggle('opened');
     }
 
 };
