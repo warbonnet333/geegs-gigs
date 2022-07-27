@@ -1,0 +1,998 @@
+/* Other */
+.step1,
+.step2,
+.step3,
+.step4, 
+.step5,
+.step6,
+.step7,
+.step8  {
+    display: none;
+}
+.step1.active,
+.step2.active,
+.step3.active,
+.step4.active, 
+.step5.active,
+.step6.active,
+.step7.active {
+    display: block;
+}
+.step8.active {
+    display: flex;
+}
+
+.line-limit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.createjob {
+    align-items: center;
+    justify-content: center;
+    max-height: 550px;
+    max-width: max-content;
+    margin-top: 19px;
+    /* overflow-y: auto; */
+    filter: drop-shadow(0px 0px 18px rgba(0, 0, 0, 0.25));
+}
+.createjob.active {
+    opacity: 1;
+    display: flex;
+}
+.createjob_step {
+    top: 50%;
+    padding: 25px 25px 30px 25px;
+    background: #fff;
+    /* box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25); */
+    border-radius: 26px;
+    width: max-content;
+    position: relative;
+    z-index: 10;
+}
+.createjob_title {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.createjob_title > img {
+    margin-right: 9px;
+}
+.createjob_subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    padding-left: 15px;
+}
+
+.createjob_step-next {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F5F6FA;
+    position: relative;
+    text-transform: uppercase;
+    padding: 8px 36px 8px 20px;
+    background-color: #5E97FF;
+    border: 2px solid #5E97FF;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.4s, color 0.4s;
+}
+.createjob_step-next-img {
+    position: absolute;
+    width: 14px;
+    height: 6px;
+    right: 16px;
+    top: calc(50% - 3px);
+}
+.createjob_step-next path {
+    transition: fill 0.4s;
+}
+.createjob_step-next:hover {
+    background-color:#F5F6FA;
+    color: #5E97FF;
+}
+.createjob_step-next:hover path {
+    fill: #5E97FF;
+}
+.createjob_step-skip {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E97FF;
+    padding: 8px 20px;
+    background-color: #F5F6FA;
+    border: 2px solid #5E97FF;
+    border-radius: 30px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.4s, color 0.4s;
+}
+.createjob_step-skip:hover {
+    color: #F5F6FA;
+    background-color: #5E97FF;
+}
+.createjob_step-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.createjob .hiden {
+    display: none;
+}
+.disable {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+}
+.createjob_step-input {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+/* Step1 */
+.step1_maininput {
+    background: #FFFFFF;
+    border: 1px solid #BABABA;
+    outline: 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    height: 46px;
+    padding-left: 25px;
+    padding-right: 64px;
+    width: 420px;
+    position: relative;
+}
+.step1_maininput input {
+    border: 0;
+    outline: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.step1_maininput-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #5E97FF;
+    border: 2px solid #5E97FF;
+    position: absolute;
+    right: 7px;
+    top: calc(50% - 16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+.step1_complite {
+    width: 17px;
+    height: 14px;
+    margin-left: 2px;
+    transition: fill 0.4s;
+}
+.step1_change {
+    display: none;
+    width: 24px;
+    height: 24px;
+    transition: fill 0.4s;
+}
+.step1.next .step1_change {
+    display: block;
+}
+.step1.next .step1_complite {
+    display: none;
+}
+.step1.next .step1_maininput-button {
+    background-color: #fff;
+    cursor: auto;
+}
+.step1.next .step1_maininput-button:hover {
+    background-color: #fff;
+}
+.step1_maininput-button:hover {
+    background-color: #fff;
+}
+.step1_maininput-button:hover .step1_complite path{
+    fill: #5E97FF;
+}
+.step1_input {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.step1_input-link {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #8E8E8E;
+    margin-top: 25px;
+    transition: color 0.4s;
+}
+.step1_input-link:hover {
+    color: #5E97FF;
+}
+.step1_input-lable {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #4B4B4B;
+    padding: 10px 24px;
+    background-color: #F5F6FA;
+    border: 1px solid #C5C5C5;
+    border-radius: 50px;
+    margin-top: 15px;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    transition: box-shadow 0.4s;
+}
+.step1_input-lable:hover {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+.step1_input-checkbox:checked+.step1_input-lable {
+    background-color: #5E97FF;
+    color: #fff;
+}
+.step1 .createjob_step-buttons,
+.step1 .step1_input {
+    display: none;
+}
+.step1.next .createjob_step-buttons,
+.step1.next .step1_input {
+    display: flex;
+}
+
+/* Step2 */
+.step2_item {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding: 14px;
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 14px;
+    color: #5F5E5E;
+    width: 346px;
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+}
+.step2_item-number {
+    line-height: 17px;
+    padding-right: 5px;
+    counter-increment: number;
+	content: "counter(number) "
+}
+.step2_item-input {
+    border: 0;
+    outline: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+}
+.step2-addtask {
+    background-color: #fff;
+    border: 1px solid #5E97FF;
+    box-shadow: 0px 0px 4px #5E97FF;
+    border-radius: 22px;
+    padding: 9px 46px 9px 16px;
+    position: relative;
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #5E97FF;
+    margin-bottom: 54px;
+    transition: background-color 0.4s, color 0.4s;
+}
+.step2-addtask-img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 11px;
+    top: calc(50% - 12px);
+}
+.step2-addtask:hover {
+    background-color: #5E97FF;
+    color: #fff;
+}
+
+/* Step3 */
+.step3_area {
+    padding-bottom: 15px;
+}
+.step3_area-lable {
+    background: #fff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+    padding: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+.step3_area-input:checked+.step3_area-lable  { 
+    border: 2px solid #5E97FF;
+}
+.step3_area-title {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    color: #000;
+    margin-bottom: 8px;
+}
+.step3_area-subtitle {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #767676;
+}
+.step3_area-image {
+    width: 49px;
+    height: 49px;
+}
+.step3_area-text {
+    width: calc(100% - 60px);
+}
+
+/* Step4 */
+.step4_area {
+    display: flex;
+    justify-content: space-between;
+}
+.step4_area .createjob_step-buttons {
+    margin-top: 20px;
+}
+.step4_area-download {
+    width: 390px;
+}
+.step4_area-preview {
+    max-height: 285px;
+    overflow-y: auto;
+    margin-top: -45px;
+}
+.step4_area-preview>span {
+    margin-left: 30px;
+    display: block;
+    width: 190px;
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+.step4_area-preview .thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.remove_img_preview {
+    width: 27px;
+    height: 19px;
+    background: url('../img/ico/traced_ico.svg') no-repeat center center, rgba(32, 31, 40, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 16px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+.remove_img_preview:hover {
+    background: url('../img/ico/traced_ico.svg') no-repeat center center, #5E97FF;
+}
+.step4_input-lable {
+    background: #fff;
+    border: 1px dashed #000000;
+    border-radius: 10px;
+    width: 100%;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+.step4_input-images {
+    width: 40px;
+    height: 37px;
+    margin-bottom: 17px;
+}
+.step4_input-title {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 15px;
+    color: #000;
+    margin-bottom: 7px;
+}
+.step4_input-subtitle {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000
+}
+.step4_input-maximg {
+    position: absolute;
+    height: 7px;
+    bottom: 9px;
+    left: 11px;
+    right: 11px;
+    border: 1px solid #5E97FF;
+    border-radius: 20px;
+}
+.step4_input-maximg span {
+    background-color: #5E97FF;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 0;
+    border-radius: 20px;
+    transition: width 0.4s;
+}
+
+/* Step5 */
+.step5 .createjob_title {
+    position: relative;
+    padding-bottom: 20px;
+}
+.step5 .createjob_title:after {
+    content: "";
+    position: absolute;
+    left: -25px;
+    right: -15px;
+    bottom: 0px;
+    height: 1px;
+    background-color: #D6D6D6;
+}
+#datepicker {
+    width: 310px;
+}
+.step5_area {
+    max-width: 755px;
+    display: flex;
+    justify-content: space-between;
+}
+.step5_area-data {
+    width: calc(50% - 25px);
+    position: relative;
+}
+.step5_area-data:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -20px;
+    bottom: -30px;
+    width: 1px;
+    background-color: #D6D6D6;
+}
+.step5_area-time {
+    width: calc(50% - 25px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.step5_area-time-title {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+    width: 100%;
+    display: block;
+    text-align: left;
+    margin-bottom: 17px;
+    padding-left: 24px;
+    position: relative;
+}
+.step5_area-time-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    background: url('../img/ico/watch_ico.svg');
+    background-size: 100% 100%;
+}
+.step5_area-time .createjob_step-buttons {
+    width: 100%;
+}
+.step5_area-time .step1_input-lable {
+    width: calc(33.333% - 6px);
+    margin-bottom: 12px;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+}
+.ui-datepicker-next .span {
+
+}
+.ui-datepicker-header {
+    position: relative;
+    margin-bottom: 35px;
+}
+.ui-datepicker-title {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+}
+.ui-datepicker-prev.ui-state-disabled {
+    background: url('../img/ico/left_ico.svg');
+    cursor: auto;
+}
+.ui-datepicker-next.ui-state-disabled {
+    background: url('../img/ico/right_ico.svg');
+    cursor: auto;
+}
+.ui-datepicker-prev {
+    position: absolute;
+    right: 40px;
+    width: 16px;
+    height: 16px;
+    background: url('../img/ico/left_active_ico.svg');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.ui-datepicker-next {
+    position: absolute;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    background: url('../img/ico/right_active_ico.svg');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.ui-datepicker-calendar {
+    width: 100%;
+    user-select: none;
+}
+.ui-datepicker-calendar thead span {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    opacity: 0.5;
+    text-align: center;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+.ui-datepicker-calendar tbody .ui-state-default {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 39px;
+    color: #000;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    transition: background 0.4s, color 0.4s;
+}
+.ui-datepicker-calendar tbody .ui-state-disabled .ui-state-default {
+    opacity: 0.5;
+    cursor: auto;
+}
+.ui-datepicker-calendar tbody a.ui-state-default:hover,
+.ui-datepicker-calendar tbody .ui-state-default.ui-state-active {
+    background: #5E97FF;
+    color: #fff;
+}
+
+/* Step6 */
+.step6 .createjob_title {
+    position: relative;
+    padding-bottom: 20px;
+}
+.step6 .createjob_title:after {
+    content: "";
+    position: absolute;
+    left: -25px;
+    right: -15px;
+    bottom: 0px;
+    height: 1px;
+    background-color: #D6D6D6;
+}
+.step6_area {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 682px;
+    gap: 24px;
+}
+.step6_input-lable {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    padding: 18px 24px;
+    width: calc(50% - 12px);
+    border: 2px solid #fff;
+    cursor: pointer;
+    user-select: none;
+}
+.step6_input-text {
+    width: calc(100% - 80px);
+}
+.step6_input-img {
+    width: 34px;
+    height: 34px;
+}
+.step6_input-img img {
+    width: 100%;
+    height: 100%;
+}
+.step6_input-title {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 15px;
+    color: #000;
+    margin-bottom: 7px;
+}
+.step6_input-subtitle {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #767676;
+}
+.step6_input-checkbox:checked+.step6_input-lable {
+    border: 2px solid #5E97FF;
+}
+.step6_values {
+    display: none;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.step6_values.active {
+    display: flex;
+}
+.step6_values-value {
+    width: 176px;
+}
+.step6_values-grafik {
+    width: calc(100% - 215px);
+}
+.grafik {
+    position: relative;
+    height: 150px;
+    margin-left: 25px;
+    border-bottom: 4px solid #5E97FF;
+}
+.grafik_diagram {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 0;
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.grafik_numbers {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: -30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.grafik_numbers span {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #3D3D3D;
+    width: 24px;
+    text-align: center;
+}
+.grafik_diagram span {
+    display: block;
+    background: #D9E6FF;
+    border: 1px solid #5E97FF;
+}
+.grafik_diagram span.solid {
+    background: #5E97FF;
+}
+.grafik:after,
+.grafik:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #5E97FF;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+}
+.grafik:after {
+    left: -4px;
+}
+.grafik:before {
+    right: -4px;
+}
+.grafik_text {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #7C7C7C;
+    position: absolute;
+}
+.grafik_rate {
+    right: 15px;
+    top: 0;
+}
+.grafik_jobs {
+    transform: rotate(-90deg);
+    left: -65px;
+    bottom: 55px
+}
+.step6_value-name {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000;
+    margin-bottom: 8px;
+}
+.step6_value-area {
+    background: #fff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.step6_value-input {
+    outline: 0;
+    border: 0;
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000;
+    width: 45px;
+    text-align: right;
+}
+.step_6-prname {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+    width: calc(100% - 50px);
+}
+
+/* Step7 */
+.step7_area-title {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 12px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.step7_area-subtitle {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.step7_area-subtitle {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #000;
+    margin-bottom: 12px;
+}
+.step7_area-text {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.step7_area-edit {
+    width: 26px;
+    height: 26px;
+    background-color: #fff;
+    border: 2px solid #5E97FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+.step7_area-edit svg {
+    width: 20px;
+    height: 20px;
+    transition: fill 0.4s;
+}
+.step7_area-edit:hover {
+    background-color: #5E97FF;
+}
+.step7_area-edit:hover svg {
+    fill: #fff;
+}
+.step7_area-imgarea {
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+.step7_area-imgarea span {
+    width: calc(50% - 8px);
+    height: 120px;
+    margin-bottom: 16px;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.step7_area-imgarea span img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.step7_area-imgarea .remove_img_preview {
+    display: none;
+}
+.step7_area {
+    display: flex;
+    justify-content: space-between;
+}
+.step7_area-left {
+    width: calc(100% - 345px);
+}
+.step7_area-right {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Step 8 */
+.createjob_step.step8 {
+    width: 506px;
+    height: 253px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
+}
+
+.createjob_step.step8 > img {
+    width: 38px;
+    height: 38px;
+}
+
+.createjob_step.step8 > h2 {
+    max-width: 282px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    color: #000;
+}
+
+/* Hits  */
+.hits_block {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(380px, 50px);
+    z-index: 1;
+}
+
+.createjob_step.step1.active.hits > .hits_block_one.active {
+    display: block;
+}
+.createjob_step.step1.active.hits > .hits_block_one-second.active {
+    display: block;
+}
+.createjob_step.step2.active.hits > .hits_block_two {
+    display: block;
+}
+.createjob_step.step3.active.hits > .hits_block_three {
+    display: block;
+}
+.createjob_step.step4.active.hits > .hits_block_four {
+    display: block;
+}
+.createjob_step.step5.active.hits > .hits_block_five {
+    display: block;
+}
+.createjob_step.step6.active.hits > .hits_block_six {
+    display: block;
+}
+.background_blur.hits > .hits_block_eight.active {
+    display: block !important;
+    transform: translate(470px, 40px);
+}
+.background_blur.hits > .hits_block_nine.active {
+    display: block !important;
+    transform: translate(500px, 170px);
+}
+
+.createjob_successfully {
+    margin: 0 auto;
+    top: 300px;
+}
+.createjob_successfully > h2 {
+    max-width: 353px !important;
+}
+/* Final hits */
+.hits_block_eight,
+.hits_block_nine {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    max-width: 379px;
+}

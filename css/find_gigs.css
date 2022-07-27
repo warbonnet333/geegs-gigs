@@ -1,0 +1,147 @@
+.find-gigs-page {
+  padding-top: 193px;
+}
+.find-gigs-page .gigs {
+  margin: 0 0 86px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
+  z-index: 10;
+  background-color: #fff;
+  width: 56px;
+  height: 37px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  border: 1px solid rgba(95, 94, 94, 0.1);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s;
+  background-image: url("../img/ico/down-ico.svg");
+  transform: rotate(180deg);
+}
+.scroll-to-top:not(.shown) {
+  display: none;
+}
+.scroll-to-top:hover {
+  transform: rotate(180deg) scale(1.1);
+  border-color: #000;
+}
+
+.more-section {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.more-section .settings_button-blue {
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+}
+.more-section .settings_button-blue.loading .settings_button-blue_loader {
+  display: block;
+}
+.more-section .settings_button-blue:hover .settings_button-blue_loader {
+  border-left: 3px solid #fff;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #5E97FF;
+  border-right: 3px solid #5E97FF;
+}
+@-webkit-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.more-section .settings_button-blue_loader {
+  display: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border-left: 3px solid #5E97FF;
+  border-top: 3px solid #5E97FF;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+  margin-right: 10px;
+  animation: 0.8s 0s infinite linear both spin;
+  transition: all 0.4s;
+}
+.more-section svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 1439px) {
+  .find-gigs-page {
+    padding-top: 13.3942vw;
+  }
+  .find-gigs-page .gigs {
+    margin: 0 0 5.9684vw;
+  }
+  .scroll-to-top {
+    right: 2.429vw;
+    bottom: 2.429vw;
+    width: 3.8864vw;
+    height: 2.5678vw;
+    border: 1px solid rgba(95, 94, 94, 0.1);
+    border-radius: 3.47vw;
+  }
+  .more-section {
+    margin-top: 0.694vw;
+  }
+  .more-section .settings_button-blue {
+    line-height: 1.2492vw;
+  }
+  .more-section .settings_button-blue:hover .settings_button-blue_loader {
+    border-left: 0.2082vw solid #fff;
+    border-top: 0.2082vw solid #fff;
+    border-bottom: 0.2082vw solid #5E97FF;
+    border-right: 0.2082vw solid #5E97FF;
+  }
+  .more-section .settings_button-blue_loader {
+    width: 1.2492vw;
+    height: 1.2492vw;
+    border-left: 0.2082vw solid #5E97FF;
+    border-top: 0.2082vw solid #5E97FF;
+    border-bottom: 0.2082vw solid transparent;
+    border-right: 0.2082vw solid transparent;
+    margin-right: 0.694vw;
+  }
+  .more-section svg {
+    width: 1.2492vw;
+    height: 1.2492vw;
+    margin-right: 0.694vw;
+  }
+}
+
+/*# sourceMappingURL=find_gigs.css.map */

@@ -1,0 +1,87 @@
+.settingspayments_titleico:after  {
+    content: "";
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: -7px;
+    background: url('../img/settings_ico/card_ico.webp');
+    background-size: 100% 100%;
+}
+.settingspayments .settings_inform {
+    margin-top: -65px;
+}
+.settingspayments .settings_inform .settings_button-black{
+    margin-top: 40px;
+    cursor: pointer;
+}
+.settingspayments_infoline-default {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000;
+    padding: 5px 12px;
+    background: #F5F6FA;
+    border-radius: 30px;
+    margin-left: 15px;
+}
+.settingspayments .settings_infoline {
+    padding-left: 55px;
+}
+.settingspayments .settings_infoline .settings_button-blue{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.settingspayments_infoline-card {
+    width: 39px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.settingspayments_infoline-card img {
+    width: 100%;
+}
+.settingspayments .settings_button-blue.solid {
+    margin-top: 10px;
+}
+.settingspayments_mintitle {
+    margin-top: 70px;
+}
+.settingspayments_balans {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 37px;
+    border-bottom: 1px solid #D6D6D6;
+}
+.settingspayments_balans-text {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+}
+.settingspayments_balans-number {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000;
+    opacity: 0.7;
+}
+
+
+
+@media (max-width: 890px) {
+    .settingspayments .settings_inform {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    .settingspayments .settings_infoline .settings_button-blue {
+        margin-top: 10px;
+        position: static;
+    }
+}

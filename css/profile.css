@@ -1,0 +1,420 @@
+.profile {
+    background: #F5F6FA;
+}
+
+.footer {
+    background: #fff;
+}
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 76px;
+    padding-bottom: 117px;
+}
+
+.profile__main {
+    width: 288px;
+    height: 497px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 32px 28px 29px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__main_header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.21);;
+}
+
+.profile__main_header > img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 20px;
+}
+
+.profile__main_header > h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.profile__main_header > p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000;
+    margin-bottom: 17px;
+    opacity: 0.6;
+}
+
+.profile__main_footer {
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.profile__main_footer > p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.profile__main_footer > p > img {
+    margin-right: 13px;
+}
+
+.profile__main_footer > button {
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 31.5px;
+    width: 162px;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.profile__main_footer > button:hover {
+    box-shadow: 0px 0px 16px rgb(0 0 0 / 35%);
+}
+
+.profile__main_footer > button > span {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: #000;
+    margin-right: 8px;
+}
+
+.profile__main_footer > button > img {
+    width: 14px;
+    height: 14px;
+}
+
+.profile__details {
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 681px;
+    min-height: 497px;
+    padding: 29px 47px 0 31px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile__details_contact,
+.profile__details_address,
+.profile__details_mygigs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.profile__details_address.last-item {
+    border: none;
+}
+
+.profile__details_contact,
+.profile__details_address {
+    padding-bottom: 28px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.21);
+}
+
+.profile__details_address,
+.profile__details_mygigs {
+    margin-top: 28px;
+}
+
+.profile__details_address > a {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    color: #717171;
+    cursor: pointer;
+}
+
+.profile__details_contact > h2,
+.profile__details_address > h2,
+.profile__details_mygigs__title > h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.profile__details_contact > p,
+.profile__details_address > p {
+    display: none;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+}
+
+.profile__details_mygigs__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile__details_mygigs__title > button {
+    padding: 7px 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5E97FF;
+    text-align: center;
+    cursor: pointer;
+}
+
+.profile__details_mygigs__block {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile__details_mygigs__block > img {
+    width: 43px;
+    height: 43px;
+    margin-right: 14px;
+}
+
+.profile__details_mygigs__block_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.profile__details_mygigs__block_info > h2 {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+}
+
+
+.profile__details_mygigs__block_info-sub {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile__details_mygigs__block_info-sub > span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.4px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.profile__details_mygigs__block_info-sub > span > img {
+    margin-right: 11px;
+    fill: rgba(0, 0, 0, .6);
+}
+
+.profile__details_mygigs__sign {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 18px 10px 15px;
+    background: #F5F6FA;
+    border-radius: 50px;
+    max-width: 215px;
+    margin-bottom: 31px;
+}
+
+.profile__details_mygigs__sign > img {
+    width: 12px;
+    height: 12px;
+}
+
+.profile__details_mygigs__sign > span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.4px;
+    text-transform: capitalize;
+    color: #262626;
+}
+
+#profile_email,
+#profile_phone,
+#profile_geolocation,
+.profile_input {
+    width: 100%;
+    border: 1px solid #BABABA;
+    border-radius: 10px;
+    height: 45px;
+    padding-left: 45px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+}
+
+textarea.profile_input {
+    height: 88px;
+    padding: 11px 14px;
+    resize: none;
+}
+
+label {
+    position: relative;
+    display: none;
+}
+
+label > img {
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translate(0, -50%);
+}
+
+p.active {
+    display: flex;
+}
+
+label.active {
+    display: block;
+}
+
+.__edit_profile {
+    display: none !important;
+}
+
+.__edit_profile.active {
+    display: flex !important;
+}
+
+.__save_profile {
+    display: none !important;
+}
+
+.__save_profile.active {
+    display: block !important;
+}
+
+@media (max-width: 939px) {
+    .profile-wrapper {
+        flex-direction: column;
+    }
+
+    .profile__main {
+        width: 100%;
+        height: max-content;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile__main_header {
+        border-bottom: none;
+        border-right: 0.5px solid rgba(0, 0, 0, 0.21);
+        flex: 1;
+        align-items: center;
+    }
+
+    .profile__main_footer {
+        flex: 1;
+        align-items: center;
+    }
+
+    .profile__details {
+        width: 100%;
+        height: max-content;
+    }
+}
+
+@media (max-width: 574px) {
+    .profile__main, .profile__details {
+        padding: 15px 10px;
+    }
+
+    .profile__details_mygigs__block_info > h2 {
+        font-size: 14px;
+    }
+
+    .profile__details_mygigs__block_info-sub > span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 450px) {
+    .profile__details_mygigs__block_info > h2 {
+        font-size: 12px;
+    }
+
+    .profile__details_mygigs__block_info-sub > span {
+        font-size: 10px;
+    }
+
+    .profile__details_mygigs__block_info-sub {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .profile__main_footer > button {
+        padding: 7px;
+        justify-content: center;
+    }
+
+    .profile__main_footer {
+        margin-left: 5px;
+    }
+}
+

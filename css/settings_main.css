@@ -1,0 +1,85 @@
+.settingsmain {
+    padding-top: 100px;
+}
+.settingsmain_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.settingsmain_wrapper > a {
+    margin-bottom: 40px;
+}
+.settingsmain_titleico:after {
+    content: "";
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: -1px;
+    background: url('../img/settings_ico/hand_ico.webp');
+    background-size: 100% 100%;
+}
+.settingsmain_area {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+.settingsmain_item {
+    width: calc(33.333% - 14px);
+    margin-bottom: 20px;
+    background-color: #F5F6FA;
+    border-radius: 10px;
+    padding: 18px 25px 30px;
+    transition: box-shadow 0.4s;
+}
+.settingsmain_item:hover {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.3);
+}
+.settingsmain_item-image {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.settingsmain_item-image img {
+    width: 100%;
+    height: 100%;
+}
+.settingsmain_item-title {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: #000;
+    padding-bottom: 10px;
+}
+.settingsmain_item-text {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000;
+    opacity: 0.7;
+}
+
+@media (max-width: 740px) {
+    .settingsmain_item {
+        width: calc(50% - 14px);
+    }
+    .settingsmain_wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 430px) {
+    .settingsmain_area {
+        display: block;
+    }
+    .settingsmain_item {
+        display: block;
+        width: 100%;
+    }
+}

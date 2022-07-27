@@ -1,0 +1,439 @@
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+.overview-page {
+  padding-top: 180px;
+}
+
+/* Header style */
+.header {
+  padding: 24px 0;
+
+  &_search {
+    form {
+      width: 340px;
+
+      input {
+        border-radius: 50px;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.4px;
+        padding: 19px 57px 19px 26px;
+        filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 0.15));
+      }
+
+      button {
+        right: 11px;
+        width: 35px;
+        height: 35px;
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  &_account {
+    &--notification {
+      margin-right: 5px;
+
+      .header_notification {
+        padding-top: 25px;
+
+        &-area {
+          box-shadow: 0px 0px 16px rgb(0 0 0 / 20%);
+          border-radius: 13px;
+        }
+      }
+
+      &_link {
+        width: 50px;
+        height: 50px;
+
+        svg {
+          height: 25px;
+        }
+      }
+    }
+
+    &--balance {
+      margin-right: 16px;
+
+      &_link {
+        border-radius: 20px;
+        padding: 8px 19px;
+        font-size: 16px;
+        letter-spacing: 0.1px;
+      }
+
+      &_dropdown {
+        padding-top: 14px;
+
+        .balance_list {
+          border-radius: 13px;
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+          min-width: 140px;
+
+          &--item {
+            &:last-of-type {
+              a {
+                padding-bottom: 17px;
+              }
+            }
+
+            &:after {
+              left: 13px;
+              height: 0.5px;
+              width: 111px;
+            }
+
+            a {
+              padding: 14px 17px 14px 20px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.white_block {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+}
+
+.ui-datepicker {
+  &-header {
+    margin-bottom: 9px;
+  }
+
+  &-title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  &-prev {
+    right: 22px;
+    width: 6px;
+    height: 6px;
+  }
+
+  &-next {
+    width: 6px;
+    height: 6px;
+  }
+
+  &-calendar {
+    thead span {
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: -0.4px;
+      margin-bottom: 10px;
+    }
+
+    tbody {
+      .ui-state-default {
+        font-size: 10px;
+        width: 21px;
+        height: 21px;
+        border: 2px solid transparent;
+      }
+
+
+      .with-event a {
+        border: 2px solid $blue;
+      }
+    }
+  }
+}
+
+
+/* Main info */
+.main_info {
+  margin-bottom: 43px;
+
+  &--small {
+    padding: 14px 18px;
+
+    &_title {
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: -0.4px;
+      margin-bottom: 6px;
+    }
+
+    &_img {
+      top: 14px;
+      right: 16px;
+      width: 26px;
+      height: 26px;
+    }
+
+    &_number {
+      font-size: 29px;
+      line-height: 38px;
+      letter-spacing: -0.4px;
+      margin-bottom: 8px;
+    }
+
+    &_descr {
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: -0.4px;
+
+      .direction {
+        margin-right: 5px;
+
+        &-icon {
+          width: 20px;
+          margin-right: 5px;
+        }
+      }
+    }
+
+  }
+
+  &.first-info {
+    grid-gap: 30px;
+  }
+
+  &.second-info {
+    grid-gap: 25px;
+  }
+
+  .user_name {
+    padding: 27px 47px 27px 27px;
+
+    &--date {
+      font-size: 19px;
+      margin-bottom: 9px;
+    }
+
+    &--text {
+      font-size: 39px;
+
+      img {
+        width: 37px;
+        margin-left: 10px;
+      }
+    }
+
+    &--completeness {
+      border-top: 0.5px solid #D6D6D6;
+      margin-top: 14px;
+      padding-top: 17px;
+
+      &_title {
+        margin-bottom: 13px;
+        font-size: 15px;
+        letter-spacing: -0.4px;
+      }
+
+      .progress {
+        border-radius: 24px;
+        height: 11px;
+        width: 430px;
+
+        &_inner {
+          border-radius: 24px;
+        }
+
+        &_percent {
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: -0.4px;
+        }
+      }
+    }
+  }
+
+  .user-schedule {
+    padding: 20px 26px 28px;
+    grid-gap: 32px;
+
+    &--coming {
+      .coming_title {
+        font-size: 17px;
+        letter-spacing: -0.4px;
+        margin-bottom: 17px;
+
+        &--descr {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+
+      .coming_list {
+        max-height: 155px;
+
+        &--item {
+          padding-right: 8px;
+          margin-bottom: 19px;
+
+          &_img {
+            width: 43px;
+            height: 43px;
+            margin-right: 12px;
+            border-radius: 5px;
+          }
+
+          &_title {
+            font-size: 15px;
+            line-height: 18px;
+            margin-bottom: 7px;
+          }
+
+          &_details {
+            font-size: 14px;
+            line-height: 17px;
+
+            .place {
+              padding-left: 15px;
+              margin-left: 10px;
+              min-width: 74px;
+
+              &:before {
+                width: 10px;
+                height: 14px;
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+
+    &--calendar {
+      max-width: 165px;
+    }
+  }
+
+  .user_earnings {
+    padding: 22px;
+
+    &--closed {
+      padding: 125px 122px 60px 47px;
+
+      &_img {
+        top: 50px;
+        left: 47px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    &--title {
+      font-size: 21px;
+      line-height: 26px;
+      letter-spacing: -0.4px;
+      margin-bottom: 15px;
+
+      &_descr {
+        font-size: 17px;
+        line-height: 21px;
+      }
+    }
+  }
+}
+
+.user_categories {
+  padding: 25px 25px 30px;
+
+  &--edit {
+    top: 25px;
+    right: 25px;
+    width: 22px;
+    height: 22px;
+    border: 2px solid $blue;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &--img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 14px;
+  }
+
+  &--name {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    margin-bottom: 13px;
+  }
+
+  &--list {
+    border-top: 0.5px solid #D6D6D6;
+    padding: 14px 0 0;
+
+    &_title {
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: -0.4px;
+      margin-bottom: 14px;
+    }
+
+    &_item span {
+      padding: 8px 13px;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: -0.4px;
+      border-radius: 50px;
+      margin-bottom: 11px;
+    }
+
+    &_more {
+      font-size: 13px;
+      line-height: 16px;
+      bottom: 18px;
+      right: 18px;
+    }
+  }
+}
+
+
+/* New to Geeks Slider */
+
+.gigs_steps {
+  margin: 86px 0 168px;
+  border-radius: 15px;
+
+  &--item {
+    height: 262px;
+    padding: 42px 51px;
+    font-size: 25px;
+    line-height: 38px;
+
+    &_title {
+      font-size: 37px;
+      line-height: 38px;
+      margin-bottom: 11px;
+    }
+  }
+}
+
+.slick-dots {
+  bottom: 25px;
+  grid-gap: 16px;
+
+  li {
+    width: 13px;
+    height: 13px;
+  }
+}

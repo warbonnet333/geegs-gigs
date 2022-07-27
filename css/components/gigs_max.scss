@@ -1,0 +1,157 @@
+$blue: #5E97FF;
+$red: #8F2C23;
+$px: 0.0694;
+
+.gigs {
+  margin: 62vw * $px 0 86vw * $px;
+
+  &_top {
+    margin-bottom: 29vw * $px;
+
+    &.with-sub {
+      margin-bottom: 11vw * $px;
+    }
+  }
+
+  &_sub {
+    grid-gap: 50vw * $px;
+    margin-bottom: 34vw * $px;
+
+    &--text {
+      font-size: 18vw * $px;
+      line-height: 21vw * $px;
+    }
+
+    &--sort {
+      &_title {
+        margin-right: 14vw * $px;
+        font-size: 15vw * $px;
+        line-height: 18vw * $px;
+        min-width: 55vw * $px;
+      }
+
+      &_select {
+        font-size: 15vw * $px;
+        line-height: 18vw * $px;
+
+        .selectric {
+          box-shadow: 0px 0px 16vw * $px rgba(0, 0, 0, 0.1);
+          border-radius: 27vw * $px;
+          padding: 13vw * $px 18vw * $px;
+          min-width: 182vw * $px;
+
+          .label {
+            margin: 0 42vw * $px 0 0;
+            font-size: 15vw * $px;
+          }
+
+          .button {
+            width: 42vw * $px;
+          }
+
+          &-items {
+            box-shadow: 0px 4vw * $px 24px rgb(0 0 0 / 25%);
+            border-radius: 23vw * $px;
+            padding-top: 42vw * $px;
+
+            li {
+              padding: 13vw * $px 18vw * $px;
+              font-size: 15vw * $px;
+              line-height: 18vw * $px;
+              min-height: 20vw * $px;
+
+              &:after {
+                right: 12vw * $px;
+                width: 15vw * $px;
+                height: 15vw * $px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &_title {
+    font-size: 29vw * $px;
+    line-height: 35vw * $px;
+  }
+
+  &_list {
+    grid-gap: 32vw * $px;
+
+    &--item {
+      border-radius: 10vw * $px;
+
+      &_top {
+        padding: 58vw * $px 9vw * $px 12vw * $px;
+      }
+
+      &_price {
+        font-size: 15vw * $px;
+        line-height: 18vw * $px;
+        padding: 9vw * $px 12vw * $px;
+        border-radius: 25vw * $px;
+
+        img {
+          height: 18vw * $px;
+          margin-right: 5vw * $px;
+        }
+      }
+
+      &_like {
+        top: 15vw * $px;
+        right: 15vw * $px;
+        width: 23vw * $px;
+        height: 23vw * $px;
+      }
+
+      &_title {
+        margin: 0 8vw * $px 13vw * $px 6vw * $px;
+        padding: 13vw * $px 10vw * $px;
+        border-bottom: 0.5vw * $px solid #D6D6D6;
+        font-size: 18vw * $px;
+        line-height: 22vw * $px;
+        min-height: 70vw * $px;
+      }
+
+      &_descr {
+        padding: 0 18vw * $px 0 41vw * $px;
+        margin-bottom: 12vw * $px;
+        font-weight: 500;
+        font-size: 15vw * $px;
+        line-height: 18vw * $px;
+        letter-spacing: -0.4vw * $px;
+
+        &:before {
+          width: 15vw * $px;
+          height: 15vw * $px;
+          left: 18vw * $px;
+        }
+      }
+
+      &_theme {
+        font-size: 13vw * $px;
+        line-height: 16vw * $px;
+        letter-spacing: -0.4vw * $px;
+        padding: 8vw * $px 13vw * $px;
+        border-radius: 50vw * $px;
+        margin: 12vw * $px 0 12vw * $px 16vw * $px;
+      }
+
+      &_posted {
+        font-size: 14vw * $px;
+        line-height: 18vw * $px;
+        letter-spacing: -0.4vw * $px;
+        padding: 0 55vw * $px 18vw * $px 16vw * $px;
+
+        &:after {
+          bottom: 14vw * $px;
+          right: 13vw * $px;
+          width: 33vw * $px;
+          height: 33vw * $px;
+        }
+      }
+    }
+  }
+}

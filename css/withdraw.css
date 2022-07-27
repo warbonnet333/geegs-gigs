@@ -1,0 +1,225 @@
+.withdraw-page {
+  background-color: #F5F6FA;
+  padding-top: 171px;
+}
+.withdraw-page .section_title {
+  margin-bottom: 46px;
+}
+.withdraw-page footer {
+  background: #fff;
+  margin-top: 158px;
+}
+
+.withdraw_grid {
+  display: grid;
+  grid-template-columns: repeat(23, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+}
+.withdraw_grid .main_info--small {
+  padding: 16px;
+}
+.withdraw_grid .main_info--small_number {
+  margin-bottom: 0;
+}
+.withdraw_grid .div1 {
+  grid-area: 1/1/5/5;
+}
+.withdraw_grid .div2 {
+  grid-area: 1/5/5/9;
+}
+.withdraw_grid .div3 {
+  grid-area: 1/9/5/13;
+}
+.withdraw_grid .div4 {
+  grid-area: 1/13/5/17;
+}
+.withdraw_grid .div5 {
+  grid-area: 1/17/12/24;
+}
+.withdraw_grid .div6 {
+  grid-area: 5/1/12/17;
+}
+
+.my_cards {
+  padding: 25px;
+  display: flex;
+  flex-flow: column;
+}
+.my_cards--title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  padding-bottom: 19px;
+  border-bottom: 0.5px solid #D6D6D6;
+}
+.my_cards--list {
+  padding: 20px 0;
+  max-height: 150px;
+  overflow: auto;
+}
+.my_cards--list_item {
+  position: relative;
+  margin-bottom: 15px;
+}
+.my_cards--list_item:last-of-type {
+  margin-bottom: 0;
+}
+.my_cards--list_item .card_name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: -0.4px;
+  margin-bottom: 8px;
+}
+.my_cards--list_item .card_number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.6px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.my_cards--list_item .card_edit {
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  width: 22px;
+  height: 22px;
+  background: none;
+  border-radius: 50%;
+  transition: all 0.4s;
+  cursor: pointer;
+  border: 2px solid #5E97FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my_cards--list_item .card_edit:hover {
+  transform: scale(1.1);
+}
+.my_cards--list_item .card_edit img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+.my_cards .settings_button-blue {
+  text-align: center;
+  margin-top: auto;
+}
+
+.withdraw_bank {
+  background: linear-gradient(106.73deg, #5E97FF 1.34%, #7A89D8 97.7%), rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(9px);
+  border-radius: 14px;
+  padding: 23px 34px 26px;
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-flow: column;
+}
+.withdraw_bank--title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 31px;
+  margin-bottom: 2px;
+}
+.withdraw_bank--text {
+  font-size: 19px;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.withdraw_bank--btn {
+  margin-top: auto;
+}
+.withdraw_bank .settings_button-white {
+  display: inline-block;
+  color: #5E97FF;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: inherit;
+  box-shadow: none;
+  transition: all 0.4s;
+  border: 2px solid #5E97FF;
+}
+.withdraw_bank .settings_button-white:hover {
+  color: #fff;
+  background: #5E97FF;
+  border-color: #fff;
+}
+
+@media only screen and (max-width: 1439px) {
+  .withdraw-page {
+    padding-top: 11.8674vw;
+  }
+  .withdraw-page .section_title {
+    margin-bottom: 3.1924vw;
+  }
+  .withdraw-page footer {
+    margin-top: 10.9652vw;
+  }
+  .withdraw_grid {
+    grid-column-gap: 1.1104vw;
+    grid-row-gap: 1.1104vw;
+  }
+  .withdraw_grid .main_info--small {
+    padding: 1.1104vw;
+  }
+  .my_cards {
+    padding: 1.735vw;
+  }
+  .my_cards--title {
+    font-size: 1.388vw;
+    letter-spacing: -0.02776vw;
+    padding-bottom: 1.3186vw;
+  }
+  .my_cards--list {
+    padding: 1.388vw 0;
+    max-height: 10.41vw;
+  }
+  .my_cards--list_item {
+    margin-bottom: 1.041vw;
+  }
+  .my_cards--list_item .card_name {
+    font-size: 1.1104vw;
+    letter-spacing: -0.02776vw;
+    margin-bottom: 0.5552vw;
+  }
+  .my_cards--list_item .card_number {
+    font-size: 0.9716vw;
+    letter-spacing: 0.04164vw;
+  }
+  .my_cards--list_item .card_edit {
+    top: 0.2776vw;
+    right: 0.1388vw;
+    width: 1.5268vw;
+    height: 1.5268vw;
+    border: 0.1388vw solid #5E97FF;
+  }
+  .withdraw_bank {
+    backdrop-filter: blur(0.6246vw);
+    border-radius: 0.9716vw;
+    padding: 1.5962vw 2.3596vw 1.8044vw;
+  }
+  .withdraw_bank--title {
+    font-size: 1.5268vw;
+    line-height: 2.1514vw;
+    margin-bottom: 0.1388vw;
+  }
+  .withdraw_bank--text {
+    font-size: 1.3186vw;
+    line-height: 2.2208vw;
+    margin-bottom: 1.388vw;
+  }
+  .withdraw_bank .settings_button-white {
+    font-size: 1.041vw;
+    line-height: 1.2492vw;
+    border: 0.1388vw solid #5E97FF;
+    padding: 0.7634vw 2.2208vw;
+  }
+}
+
+/*# sourceMappingURL=withdraw.css.map */

@@ -1,0 +1,100 @@
+.settingssecurity_titleico:after  {
+    content: "";
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: -1px;
+    background: url('../img/settings_ico/lock_ico.webp');
+    background-size: 100% 100%;
+}
+.settingssecurity .settings_infoline .settings_button-blue {
+    position: absolute;
+    right: 0;
+    bottom: 20px
+}
+.settingssecurity  .settings_infoline {
+    margin-bottom: 55px;
+}
+.settingssecurity_devices {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D6D6D6;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+.settingssecurity_devices-image {
+    width: 37px;
+    margin-right: 15px;
+}
+.settingssecurity_devices-image img {
+    width: 100%;
+}
+.settingssecurity_devices-info {
+    width: calc(100% - 200px);
+}
+.settingssecurity_devices-button {
+    width: 145px;
+    margin-left: 3px;
+    text-align: right;
+}
+.settingssecurity_devices-oc {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 10px;
+}
+.settingssecurity_devices-oc-name {
+    font-weight: 400;
+    position: relative;
+    padding-left: 13px;
+}
+.settingssecurity_devices-oc-name:after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    top: 8px;
+}
+.settingssecurity_devices-session {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000;
+    padding: 8px 14px;
+    background-color: #F5F6FA;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.settingssecurity_devices-location {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000;
+    opacity: 0.6;
+}
+.settingssecurity_devices-location-time {
+    position: relative;
+    padding-left: 13px;
+}
+.settingssecurity_devices-location-time:after {
+    content: "";
+    width: 3px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    top: 8px;
+}
+.settingssecurity .settings_button-white{
+    margin-top: 40px;
+}

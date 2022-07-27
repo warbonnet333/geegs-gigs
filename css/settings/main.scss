@@ -1,0 +1,153 @@
+$blue: #5E97FF;
+$red: #8F2C23;
+$px: 0.0694;
+
+.settings-page {
+  padding-top: 205px;
+  background: #fff;
+
+  .footer {
+    background: #F5F6FA;
+  }
+
+  .settingsmain {
+    padding-top: 0;
+  }
+
+  .settings {
+    padding-top: 0;
+  }
+
+  .gigs_list {
+    margin-top: 50px;
+  }
+
+  &.my-profile-page {
+    background: #F5F6FA;
+
+    .profile-wrapper {
+      padding-top: 0;
+    }
+
+    .footer {
+      background: #fff;
+    }
+  }
+
+  .profile__details_address {
+    position: relative;
+
+    &.editing {
+      .add-field {
+        display: block;
+      }
+    }
+
+    .add-field {
+      display: none;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      overflow: hidden;
+      background-color: $blue;
+      cursor: pointer;
+      background-image: url("../../img/ico/plus-white.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+      border: none;
+    }
+
+  }
+
+  .profile__main_header_img {
+    position: relative;
+
+    .person-img {
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+      cursor: pointer;
+      background-image: url("../../img/ico/pen-black.svg");
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 1px solid #000000;
+      background-color: #fff;
+      //display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &.active {
+        display: block;
+      }
+
+      input {
+        display: none;
+      }
+    }
+  }
+
+  .profile__main_footer {
+    height: 100%;
+
+    .settings_button-blue,
+    .__edit_profile{
+      font-size: 15px;
+      line-height: 18px;
+      margin-top: auto;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1439px) {
+  .settings-page {
+    padding-top: 205vw * $px;
+  }
+
+  .settings .container {
+    max-width: 1140vw * $px;
+  }
+  .settings {
+    padding-top: 70vw * $px;
+    padding-bottom: 100vw * $px;
+  }
+  .settings .container {
+    max-width: 1140px;
+  }
+
+  .settings_breadcrumbs {
+    padding-bottom: 15vw * $px;
+  }
+  .settings_breadcrumbs li {
+    padding-left: 10vw * $px;
+  }
+  .settings_breadcrumbs a {
+    font-size: 17vw * $px;
+    line-height: 21vw * $px;
+  }
+  .settings_breadcrumbs a:after {
+    padding-left: 10vw * $px;
+  }
+  .settings_title {
+    font-size: 39vw * $px;
+    line-height: 48vw * $px;
+    padding-bottom: 5vw * $px;
+  }
+  .settings_subtitle {
+    font-size: 25vw * $px;
+    line-height: 30vw * $px;
+    padding-bottom: 40vw * $px;
+  }
+
+  .gigs_list {
+    margin-top: 50vw * $px;
+  }
+
+}
+

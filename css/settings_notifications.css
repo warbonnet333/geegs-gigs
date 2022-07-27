@@ -1,0 +1,58 @@
+.settingsnotifications_titleico:after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: -2px;
+    background: url('../img/settings_ico/bell_ico.webp');
+    background-size: 100% 100%;
+}
+.settingsnotifications .settings_infoline-value {
+    font-size: 16px;
+    line-height: 19px;
+}
+.settingsnotifications .settings_infoline-area {
+    align-items:flex-end;
+    margin-top: -22px;
+}
+.settingsnotifications .settings_infoline {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.settingsnotifications_pt40 {
+    padding-top: 40px;
+}
+.settingsnotifications_phoneico,
+.settingsnotifications_emailico {
+    position: relative;
+}
+.settingsnotifications_emailico {
+    padding-left: 50px;
+}
+.settingsnotifications_phoneico:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url('../img/settings_ico/phone_ico.webp');
+    background-size: 100% 100%;
+    position: absolute;
+    left: 20px;
+    top: calc(50% - 8px);
+}
+.settingsnotifications_emailico:before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url('../img/settings_ico/email_ico.webp');
+    background-size: 100% 100%;
+    position: absolute;
+    left: 20px;
+    top: calc(50% - 12px);
+}
+
+@media (max-width: 1055px) {
+    .settingsnotifications .settings_infoline-area {
+        margin-top: 0;
+    }
+}

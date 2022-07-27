@@ -1,0 +1,10 @@
+.settingsinfo_titleico:after {
+    content: "";
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: -2px;
+    background: url('../img/settings_ico/info_ico.webp');
+    background-size: 100% 100%;
+}

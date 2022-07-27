@@ -1,0 +1,119 @@
+.header {
+  padding: 24vw * $px 0;
+}
+
+.container {
+  max-width: 1280vw * $px;
+  padding: 0 30vw * $px;
+}
+
+.logo_img {
+  width: 36vw * $px;
+  height: 36vw * $px;
+  margin-right: 6vw * $px;
+}
+
+.logo_text {
+  font-weight: 500;
+  font-size: 26vw * $px;
+  line-height: 24vw * $px;
+}
+
+.header_account {
+  backdrop-filter: blur(54vw * $px);
+  border-radius: 29vw * $px;
+  padding: 8vw * $px 10vw * $px;
+  border: 1vw * $px solid rgba(255, 255, 255, 0.44);
+
+  &-dropdown_menu {
+    top: 70vw * $px;
+    padding: 26vw * $px 0 26vw * $px 26vw * $px;
+    border: 1vw * $px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10vw * $px;
+    min-width: 234vw * $px;
+    filter: drop-shadow(0vw * $px 0vw * $px 16vw * $px rgba(0, 0, 0, 0.2));
+  }
+}
+
+.header_account-dropdown_menu > ul > li {
+  font-size: 15vw * $px;
+  line-height: 21vw * $px;
+}
+
+.header_account-dropdown_menu > ul > li:not(:last-child) {
+  margin-bottom: 29vw * $px;
+}
+
+@media (max-width: 890vw * $px) {
+  .header_account-dropdown_menu {
+    left: -110vw * $px;
+  }
+}
+
+.header_account-login {
+  width: 42vw * $px;
+  height: 42vw * $px;
+  padding: 1vw * $px;
+  box-shadow: 0vw * $px 0vw * $px 8vw * $px rgba(94, 151, 255, 0.5);
+}
+
+.header_account-login:hover {
+  box-shadow: 0vw * $px 0vw * $px 8vw * $px rgba(94, 151, 255, 1.5);
+}
+
+.settings_button-blue {
+  font-size: 15vw * $px;
+  line-height: 18vw * $px;
+  border: 2vw * $px solid #5E97FF;
+  border-radius: 31vw * $px;
+  padding: 11vw * $px 32vw * $px;
+}
+
+.settings_button-gray {
+  font-size: 15vw * $px;
+  line-height: 18vw * $px;
+  border: 1vw * $px solid rgba(0, 0, 0, 0.1);
+  border-radius: 31vw * $px;
+  padding: 11vw * $px 30vw * $px;
+}
+
+.ui-datepicker {
+  &-header {
+    margin-bottom: 35vw * $px;
+  }
+
+  &-title {
+    font-size: 18vw * $px;
+    line-height: 22vw * $px;
+  }
+
+  &-prev {
+    right: 40vw * $px;
+    width: 16vw * $px;
+    height: 16vw * $px;
+  }
+
+  &-next {
+    width: 16vw * $px;
+    height: 16vw * $px;
+  }
+
+  &-calendar {
+    thead {
+      span {
+        font-size: 14vw * $px;
+        line-height: 17vw * $px;
+        margin-bottom: 15vw * $px;
+      }
+    }
+
+    tbody {
+      .ui-state-default {
+        font-size: 14vw * $px;
+        line-height: 39vw * $px;
+        width: 39vw * $px;
+        height: 39vw * $px;
+      }
+    }
+  }
+}

@@ -1,0 +1,274 @@
+$blue: #5E97FF;
+$red: #8F2C23;
+$px: 0.0694;
+
+.withdraw-page {
+  background-color: #F5F6FA;
+  padding-top: 171px;
+
+  .section_title {
+    margin-bottom: 46px;
+  }
+
+  footer {
+    background: #fff;
+    margin-top: 158px;
+  }
+}
+
+.withdraw_grid {
+  display: grid;
+  grid-template-columns: repeat(23, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+
+  .main_info--small {
+    padding: 16px;
+
+    &_number {
+      margin-bottom: 0;
+    }
+  }
+
+  .div1 {
+    grid-area: 1 / 1 / 5 / 5;
+  }
+
+  .div2 {
+    grid-area: 1 / 5 / 5 / 9;
+  }
+
+  .div3 {
+    grid-area: 1 / 9 / 5 / 13;
+  }
+
+  .div4 {
+    grid-area: 1 / 13 / 5 / 17;
+  }
+
+  .div5 {
+    grid-area: 1 / 17 / 12 / 24;
+  }
+
+  .div6 {
+    grid-area: 5 / 1 / 12 / 17;
+  }
+}
+
+.my_cards {
+  padding: 25px;
+  display: flex;
+  flex-flow: column;
+
+  &--title {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+    padding-bottom: 19px;
+    border-bottom: 0.5px solid #D6D6D6;
+  }
+
+  &--list {
+    padding: 20px 0;
+    max-height: 150px;
+    overflow: auto;
+
+    &_item {
+      position: relative;
+      margin-bottom: 15px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .card {
+        &_name {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 1.3;
+          letter-spacing: -0.4px;
+          margin-bottom: 8px;
+        }
+
+        &_number {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1.2;
+          letter-spacing: 0.6px;
+          color: rgba(0, 0, 0, 0.5);
+        }
+
+        &_edit {
+          position: absolute;
+          top: 4px;
+          right: 2px;
+          width: 22px;
+          height: 22px;
+          background: none;
+          border-radius: 50%;
+          transition: all 0.4s;
+          cursor: pointer;
+          border: 2px solid $blue;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+
+          img {
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+          }
+        }
+      }
+
+    }
+  }
+
+  .settings_button-blue {
+    text-align: center;
+    margin-top: auto;
+  }
+
+}
+
+.withdraw_bank {
+  background: linear-gradient(106.73deg, #5E97FF 1.34%, #7A89D8 97.7%), rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(9px);
+  border-radius: 14px;
+  padding: 23px 34px 26px;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-flow: column;
+
+  &--title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 31px;
+    margin-bottom: 2px;
+  }
+
+  &--text {
+    font-size: 19px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+
+  &--btn {
+    margin-top: auto;
+  }
+
+  .settings_button-white {
+    display: inline-block;
+    color: $blue;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: inherit;
+    box-shadow: none;
+    transition: all 0.4s;
+    border: 2px solid $blue;
+
+    &:hover {
+      color: #fff;
+      background: $blue;
+      border-color: #fff;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1439px) {
+  .withdraw-page {
+    padding-top: 171vw * $px;
+
+    .section_title {
+      margin-bottom: 46vw * $px;
+    }
+
+    footer {
+      margin-top: 158vw * $px;
+    }
+  }
+
+  .withdraw_grid {
+    grid-column-gap: 16vw * $px;
+    grid-row-gap: 16vw * $px;
+
+    .main_info--small {
+      padding: 16vw * $px;
+    }
+  }
+
+  .my_cards {
+    padding: 25vw * $px;
+
+    &--title {
+      font-size: 20vw * $px;
+      letter-spacing: -0.4vw * $px;
+      padding-bottom: 19vw * $px;
+    }
+
+    &--list {
+      padding: 20vw * $px 0;
+      max-height: 150vw * $px;
+
+      &_item {
+        margin-bottom: 15vw * $px;
+
+        .card {
+          &_name {
+            font-size: 16vw * $px;
+            letter-spacing: -0.4vw * $px;
+            margin-bottom: 8vw * $px;
+          }
+
+          &_number {
+            font-size: 14vw * $px;
+            letter-spacing: 0.6vw * $px;
+          }
+
+          &_edit {
+            top: 4vw * $px;
+            right: 2vw * $px;
+            width: 22vw * $px;
+            height: 22vw * $px;
+            border: 2vw * $px solid $blue;
+          }
+        }
+      }
+    }
+  }
+
+  .withdraw_bank {
+    backdrop-filter: blur(9vw * $px);
+    border-radius: 14vw * $px;
+    padding: 23vw * $px 34vw * $px 26vw * $px;
+
+    &--title {
+      font-size: 22vw * $px;
+      line-height: 31vw * $px;
+      margin-bottom: 2vw * $px;
+    }
+
+    &--text {
+      font-size: 19vw * $px;
+      line-height: 32vw * $px;
+      margin-bottom: 20vw * $px;
+    }
+
+    .settings_button-white {
+      font-size: 15vw * $px;
+      line-height: 18vw * $px;
+      border: 2vw * $px solid $blue;
+      padding: 11vw * $px 32vw * $px;
+    }
+  }
+}

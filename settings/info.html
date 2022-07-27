@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/geeks.css">
+    <link rel="stylesheet" href="../css/create_job.css">
+    <link rel="stylesheet" href="../css/settings.css">
+    <link rel="stylesheet" href="../css/settings_info.css">
+    <link rel="stylesheet" href="../css/overview/overview.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/settings/main.css">
+    <title>Geeks&Gigs</title>
+</head>
+<body class="settings-page">
+
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <a href="#" class="logo">
+                <svg class="logo_img" width="36" height="36" viewBox="0 0 36 36" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="18" r="18" fill="#5E97FF"/>
+                    <path d="M22.4857 16.422C24.0492 16.422 25.6126 16.423 27.1761 16.421C27.3723 16.421 27.5569 16.4694 27.739 16.5329C27.8492 16.5712 27.9091 16.6468 27.9241 16.7738C28.2069 19.1132 27.7008 21.2626 26.3808 23.216C26.3355 23.2825 26.3411 23.3178 26.3964 23.3712C26.6041 23.5728 26.8074 23.7789 27.0111 23.9845C27.3492 24.3252 27.3492 24.6916 27.0126 25.0287C26.5946 25.4475 26.1771 25.8663 25.759 26.2846C25.4748 26.5688 25.0829 26.5699 24.7972 26.2861C24.5769 26.0674 24.3565 25.8487 24.1402 25.6259C24.0859 25.57 24.0507 25.5655 23.9843 25.6113C22.9239 26.337 21.7643 26.8254 20.5002 27.0587C20.4081 27.0758 20.3694 27.1056 20.3724 27.2099C20.3815 27.5163 20.3769 27.8227 20.3754 28.1296C20.3734 28.5207 20.1013 28.7964 19.7129 28.7979C19.0926 28.7999 18.4724 28.7994 17.8516 28.7979C17.4909 28.7969 17.2163 28.5504 17.1977 28.1876C17.1806 27.861 17.1866 27.5329 17.1916 27.2054C17.1931 27.1096 17.1609 27.0763 17.0714 27.0597C15.8123 26.8259 14.6553 26.3411 13.5973 25.6194C13.5234 25.569 13.4842 25.5695 13.4213 25.635C13.2155 25.8502 13.0033 26.0593 12.7915 26.269C12.4831 26.5744 12.0978 26.5754 11.7909 26.27C11.3714 25.8527 10.9538 25.4339 10.5373 25.0141C10.2264 24.7006 10.2284 24.3176 10.5403 24.0037C10.7441 23.798 10.9463 23.5904 11.1556 23.3908C11.226 23.3233 11.2345 23.2805 11.1762 23.1963C10.6797 22.4792 10.2989 21.7041 10.0272 20.8745C9.90297 20.4961 9.80035 20.112 9.73193 19.7194C9.71684 19.6323 9.69018 19.5929 9.59058 19.5955C9.28875 19.6035 8.98692 19.599 8.68509 19.598C8.29623 19.5965 8.01 19.3294 8.00547 18.9418C7.99793 18.3204 7.99843 17.6985 8.00547 17.0771C8.0095 16.6825 8.2907 16.4104 8.6861 16.4038C8.97937 16.3993 9.27315 16.3983 9.56643 16.4054C9.66804 16.4079 9.71131 16.3827 9.72992 16.2768C9.85216 15.5723 10.0685 14.896 10.3577 14.2423C10.5771 13.7464 10.8346 13.2727 11.1435 12.8277C11.2119 12.7294 11.2184 12.669 11.1229 12.5813C10.9161 12.3913 10.7224 12.1867 10.5247 11.9871C10.233 11.6923 10.234 11.2987 10.5278 11.0039C10.9508 10.5785 11.3749 10.1542 11.7995 9.72982C12.0907 9.43904 12.4735 9.43349 12.7724 9.72025C12.9872 9.92687 13.1974 10.138 13.4027 10.3537C13.4656 10.4198 13.5048 10.4187 13.5777 10.3689C14.5461 9.70059 15.6055 9.23896 16.7525 8.97791C16.8586 8.95372 16.9648 8.92801 17.0719 8.91491C17.1665 8.90332 17.1936 8.86149 17.1926 8.76775C17.1886 8.44874 17.1811 8.12872 17.2007 7.81072C17.2223 7.46097 17.4889 7.20949 17.8365 7.20546C18.4734 7.19739 19.1108 7.19689 19.7481 7.20546C20.1028 7.2105 20.3729 7.50179 20.3764 7.86061C20.3794 8.16702 20.3799 8.47394 20.3754 8.78035C20.3744 8.863 20.3991 8.89677 20.4826 8.91189C21.7643 9.14623 22.9389 9.64163 24.0114 10.3804C24.0748 10.4243 24.1055 10.4187 24.1558 10.3673C24.3606 10.1567 24.5688 9.95006 24.7771 9.74293C25.092 9.42996 25.4708 9.43097 25.7857 9.74494C26.2042 10.1632 26.6223 10.5815 27.0393 11.0008C27.3396 11.3027 27.3416 11.6887 27.0433 11.9936C26.8376 12.2033 26.6318 12.4129 26.4195 12.6155C26.3526 12.6795 26.3556 12.7214 26.4054 12.7934C26.741 13.2762 27.0187 13.7918 27.2556 14.33C27.3019 14.4349 27.2797 14.453 27.1731 14.4525C25.9995 14.4495 24.8259 14.4495 23.6523 14.4525C23.5667 14.4525 23.5154 14.4238 23.4641 14.3588C22.5315 13.1805 21.3297 12.4265 19.8507 12.1761C17.8934 11.8445 16.1639 12.362 14.7136 13.7288C13.699 14.6853 13.0988 15.8752 12.9374 17.2601C12.7155 19.1626 13.2794 20.8186 14.6195 22.1879C15.5462 23.1343 16.6825 23.7018 17.9945 23.8721C19.7431 24.0994 21.3086 23.6438 22.6532 22.4953C23.5164 21.7585 24.1241 20.8403 24.4566 19.7472C24.4895 19.639 24.4516 19.5849 24.343 19.5849C22.1632 19.5849 19.9835 19.5844 17.8038 19.5859C17.585 19.5859 17.3893 19.54 17.2359 19.3717C17.1142 19.2382 17.0593 19.0804 17.0593 18.901C17.0598 18.3048 17.0588 17.7086 17.0598 17.1119C17.0608 16.7047 17.341 16.422 17.7465 16.422C19.3266 16.421 20.9056 16.422 22.4857 16.422Z"
+                          fill="white"/>
+                </svg>
+                <span class="logo_text">Geeks&Gigs</span>
+            </a>
+            <div class="header_search">
+                <form action="/">
+                    <input type="text" name="search" value="" placeholder="Search for gigs">
+                    <button type="submit">
+                        <img src="../img/ico/search.svg" alt="search">
+                    </button>
+                </form>
+            </div>
+
+            <div class="header_menu">
+                <ul class="header_menu-list">
+                    <li><a href="#">Find Gigs</a></li>
+                    <li><a href="#">My Gigs</a></li>
+                    <li><a class="unread" href="#">Inbox</a></li>
+                </ul>
+            </div>
+
+            <div class="header_account">
+                <div class="header_account--notification">
+                    <a class="header_account--notification_link" href="#">
+                        <svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M11.6913 1.02928C11.4673 1.10282 11.3298 1.20363 11.1912 1.39603C11.0799 1.5505 11.0445 1.67432 11.0234 1.98296L11.0068 2.22564L10.6782 2.27259C9.1558 2.49014 7.7017 3.12271 6.4617 4.10688C6.07465 4.41405 5.45814 5.02606 5.15116 5.40781C4.02636 6.80657 3.39016 8.40187 3.24557 10.1863C3.22769 10.4068 3.21712 12.0275 3.21701 14.5601L3.21682 18.5836L2.15955 19.8061C1.57803 20.4785 1.07938 21.0775 1.05143 21.1373C1.02347 21.1971 1.00034 21.28 1.00001 21.3215C0.998695 21.4867 1.14233 21.6842 1.30921 21.7468C1.36318 21.767 4.55208 21.7757 11.9473 21.7757H22.5084L22.6303 21.7146C22.8017 21.6287 22.8762 21.5076 22.875 21.3167C22.8744 21.233 22.8591 21.1384 22.8408 21.1064C22.8225 21.0745 22.3301 20.4956 21.7465 19.82L20.6856 18.5915L20.6853 14.7707C20.6851 10.9642 20.671 10.2214 20.5883 9.62845C20.4632 8.73195 20.2021 7.89282 19.7823 7.03781C18.5237 4.47472 16.0364 2.67395 13.1972 2.27033C12.8169 2.2163 12.8549 2.24944 12.8549 1.97172C12.8549 1.55297 12.6829 1.25441 12.3479 1.09165C12.1609 1.00081 11.8639 0.972582 11.6913 1.02928ZM12.9644 3.61427C13.8524 3.75083 14.5629 3.97743 15.3191 4.36526C15.7608 4.59178 16.2767 4.92965 16.6333 5.22604C16.9482 5.48771 17.463 6.0077 17.7008 6.30431C18.3552 7.12061 18.9154 8.28717 19.1229 9.26547C19.2798 10.0054 19.2701 9.69582 19.2818 14.3185L19.2925 18.5836L19.9709 19.4801L20.6494 20.3766L16.3004 20.3835C13.9084 20.3873 9.99151 20.3873 7.59615 20.3835L3.24097 20.3766L3.91356 19.4872L4.58617 18.5978L4.58628 14.7194C4.58636 10.837 4.59789 10.2514 4.68507 9.70014C5.05256 7.37666 6.56615 5.34285 8.70685 4.29607C9.50122 3.90764 10.311 3.67819 11.2532 3.5746C11.5832 3.53831 12.628 3.56254 12.9644 3.61427ZM7.33522 23.0119C7.40455 23.7709 7.8354 24.4766 8.55086 25.0029C9.23495 25.5062 10.0702 25.8207 11.1026 25.9636C11.491 26.0174 12.4903 26.0102 12.8823 25.9508C14.0599 25.7722 14.9995 25.3594 15.6665 24.7275C16.0564 24.3581 16.2946 24.0063 16.4418 23.5823C16.5014 23.4105 16.5786 23.0178 16.5786 22.886V22.808H15.8804H15.1822V22.8983C15.1822 23.1245 15.0204 23.4334 14.773 23.6792C14.2429 24.2062 13.3836 24.5392 12.324 24.6284C11.9482 24.66 11.6136 24.6471 11.1721 24.584C9.88076 24.3992 8.86259 23.7345 8.72295 22.9852C8.70657 22.8972 8.69316 22.8214 8.69316 22.8166C8.69316 22.8119 8.38344 22.808 8.00488 22.808H7.31661L7.33522 23.0119Z"
+                                  fill="white" stroke="white" stroke-width="0.2"/>
+                        </svg>
+                    </a>
+                    <div class="header_notification">
+                        <div class="header_notification-area">
+                            <div class="header_notification-item">
+                                <div class="header_notification-image">
+                                    <img src="../img/notification_ico/download.svg" alt="Image">
+                                </div>
+                                <div class="header_notification-info">
+                                    <p class="header_notification-name">Mark Kowalski has requested to complete your
+                                        job. Respond to his request.</p>
+                                    <div class="header_notification-date">July 12, 2022</div>
+                                </div>
+                            </div>
+
+                            <div class="header_notification-item">
+                                <div class="header_notification-image">
+                                    <img src="../img/notification_ico/download.svg" alt="Image">
+                                </div>
+                                <div class="header_notification-info">
+                                    <p class="header_notification-name">Mark Kowalski has requested to complete your
+                                        job. Respond to his request.</p>
+                                    <div class="header_notification-date">July 12, 2022</div>
+                                </div>
+                            </div>
+
+                            <div class="header_notification-item">
+                                <div class="header_notification-image">
+                                    <img src="../img/notification_ico/download.svg" alt="Image">
+                                </div>
+                                <div class="header_notification-info">
+                                    <p class="header_notification-name">Mark Kowalski has requested to complete your
+                                        job. Respond to his request.</p>
+                                    <div class="header_notification-date">July 12, 2022</div>
+                                </div>
+                            </div>
+
+                            <div class="header_notification-item">
+                                <div class="header_notification-image">
+                                    <img src="../img/notification_ico/download.svg" alt="Image">
+                                </div>
+                                <div class="header_notification-info">
+                                    <p class="header_notification-name">Mark Kowalski has requested to complete your
+                                        job. Respond to his request.</p>
+                                    <div class="header_notification-date">July 12, 2022</div>
+                                </div>
+                            </div>
+
+                            <div class="header_notification-item">
+                                <div class="header_notification-image">
+                                    <img src="../img/notification_ico/download.svg" alt="Image">
+                                </div>
+                                <div class="header_notification-info">
+                                    <p class="header_notification-name">Mark Kowalski has requested to complete your
+                                        job. Respond to his request.</p>
+                                    <div class="header_notification-date">July 12, 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header_account--balance">
+                    <div class="header_account--balance_link">$728.50</div>
+                    <div class="header_account--balance_dropdown">
+                        <ul class="balance_list">
+                            <li class="balance_list--item">
+                                <a href="#">Withdraw</a>
+                            </li>
+                            <li class="balance_list--item">
+                                <a href="#">Dashboard</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <a href="#" class="header_account-login">
+                    <img class="header_account-login-img" src="../img/button/user.svg" alt="User">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="settingsinfo settings">
+    <div class="container">
+        <ul class="settings_breadcrumbs">
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Personal Info</a></li>
+        </ul>
+        <h1 class="settings_title settingsinfo_titleico">Personal Info</h1>
+        <div class="settings_row">
+            <div class="settings_col">
+                <div class="settings_infoline">
+                    <div class="settings_infoline-header">
+                        <p class="settings_infoline-title">Full name</p>
+                        <a href="#" class="settings_infoline-cancel">Cancel</a>
+                    </div>
+                    <div class="settings_infoline-area">
+                        <div class="settings_infoline-area_static active">
+                            <p class="settings_infoline-value">Christina Peters </p>
+                            <svg class="settings_infoline-edit" data-position="0" width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.6035" cy="13" r="12" fill="white" stroke="#5E97FF" stroke-width="2"/>
+                                <path d="M14.9209 8.81212L17.7914 11.6826M8.10352 18.5H10.974L18.509 10.965C18.8897 10.5843 19.1035 10.0681 19.1035 9.52974C19.1035 8.99142 18.8897 8.47515 18.509 8.0945C18.1284 7.71385 17.6121 7.5 17.0738 7.5C16.5355 7.5 16.0192 7.71385 15.6385 8.0945L8.10352 15.6295V18.5Z" stroke="#5E97FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="settings_infoline-area_action">
+                            <input type="text" value="Christina Peters" />
+                            <button class="settings_infoline-area_action__confirm">
+                                <img src="../img/settings_ico/check.svg" alt="Check">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings_infoline">
+                    <div class="settings_infoline-header">
+                        <p class="settings_infoline-title">Gender</p>
+                        <a href="#" class="settings_infoline-cancel">Cancel</a>
+                    </div>
+                    <div class="settings_infoline-area">
+                        <div class="settings_infoline-area_static active">
+                            <p class="settings_infoline-value">Female</p>
+                            <svg class="settings_infoline-edit" data-position="1" width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.6035" cy="13" r="12" fill="white" stroke="#5E97FF" stroke-width="2"/>
+                                <path d="M14.9209 8.81212L17.7914 11.6826M8.10352 18.5H10.974L18.509 10.965C18.8897 10.5843 19.1035 10.0681 19.1035 9.52974C19.1035 8.99142 18.8897 8.47515 18.509 8.0945C18.1284 7.71385 17.6121 7.5 17.0738 7.5C16.5355 7.5 16.0192 7.71385 15.6385 8.0945L8.10352 15.6295V18.5Z" stroke="#5E97FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="settings_infoline-area_action">
+                            <input type="text" value="Christina Peters" />
+                            <button class="settings_infoline-area_action__confirm">
+                                <img src="../img/settings_ico/check.svg" alt="Check">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings_infoline">
+                    <div class="settings_infoline-header">
+                        <p class="settings_infoline-title">Date of birth</p>
+                        <a href="#" class="settings_infoline-cancel">Cancel</a>
+                    </div>
+                    <div class="settings_infoline-area">
+                        <div class="settings_infoline-area_static active">
+                            <p class="settings_infoline-value">December 10, 2000</p>
+                            <svg class="settings_infoline-edit" data-position="2" width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.6035" cy="13" r="12" fill="white" stroke="#5E97FF" stroke-width="2"/>
+                                <path d="M14.9209 8.81212L17.7914 11.6826M8.10352 18.5H10.974L18.509 10.965C18.8897 10.5843 19.1035 10.0681 19.1035 9.52974C19.1035 8.99142 18.8897 8.47515 18.509 8.0945C18.1284 7.71385 17.6121 7.5 17.0738 7.5C16.5355 7.5 16.0192 7.71385 15.6385 8.0945L8.10352 15.6295V18.5Z" stroke="#5E97FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="settings_infoline-area_action">
+                            <input type="text" value="December 10, 2000" />
+                            <button class="settings_infoline-area_action__confirm">
+                                <img src="../img/settings_ico/check.svg" alt="Check">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings_infoline">
+                    <div class="settings_infoline-header">
+                        <p class="settings_infoline-title">Email address</p>
+                        <a href="#" class="settings_infoline-cancel">Cancel</a>
+                    </div>
+                    <div class="settings_infoline-area">
+                        <div class="settings_infoline-area_static active">
+                            <p class="settings_infoline-value">c.peters@gmail.com</p>
+                            <svg class="settings_infoline-edit" data-position="3" width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.6035" cy="13" r="12" fill="white" stroke="#5E97FF" stroke-width="2"/>
+                                <path d="M14.9209 8.81212L17.7914 11.6826M8.10352 18.5H10.974L18.509 10.965C18.8897 10.5843 19.1035 10.0681 19.1035 9.52974C19.1035 8.99142 18.8897 8.47515 18.509 8.0945C18.1284 7.71385 17.6121 7.5 17.0738 7.5C16.5355 7.5 16.0192 7.71385 15.6385 8.0945L8.10352 15.6295V18.5Z" stroke="#5E97FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="settings_infoline-area_action">
+                            <input type="text" value="c.peters@gmail.com" />
+                            <button class="settings_infoline-area_action__confirm">
+                                <img src="../img/settings_ico/check.svg" alt="Check">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings_infoline">
+                    <div class="settings_infoline-header">
+                        <p class="settings_infoline-title">Phone number</p>
+                        <a href="#" class="settings_infoline-cancel">Cancel</a>
+                    </div>
+                    <div class="settings_infoline-area">
+                        <div class="settings_infoline-area_static active">
+                            <p class="settings_infoline-value">+14167086846</p>
+                            <svg class="settings_infoline-edit" data-position="4" width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.6035" cy="13" r="12" fill="white" stroke="#5E97FF" stroke-width="2"/>
+                                <path d="M14.9209 8.81212L17.7914 11.6826M8.10352 18.5H10.974L18.509 10.965C18.8897 10.5843 19.1035 10.0681 19.1035 9.52974C19.1035 8.99142 18.8897 8.47515 18.509 8.0945C18.1284 7.71385 17.6121 7.5 17.0738 7.5C16.5355 7.5 16.0192 7.71385 15.6385 8.0945L8.10352 15.6295V18.5Z" stroke="#5E97FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="settings_infoline-area_action">
+                            <input type="phone" value="+14167086846" />
+                            <button class="settings_infoline-area_action__confirm">
+                                <img src="../img/settings_ico/check.svg" alt="Check">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="settings_infoline">
+                    <div class="settings_infoline-header">
+                        <p class="settings_infoline-title">Address</p>
+                        <a href="#" class="settings_infoline-cancel">Cancel</a>
+                    </div>
+                    <div class="settings_infoline-area">
+                        <div class="settings_infoline-area_static active">
+                            <p class="settings_infoline-value">95 the Pond Rd, North York ON, Canada</p>
+                            <svg class="settings_infoline-edit" data-position="5" width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="13.6035" cy="13" r="12" fill="white" stroke="#5E97FF" stroke-width="2"/>
+                                <path d="M14.9209 8.81212L17.7914 11.6826M8.10352 18.5H10.974L18.509 10.965C18.8897 10.5843 19.1035 10.0681 19.1035 9.52974C19.1035 8.99142 18.8897 8.47515 18.509 8.0945C18.1284 7.71385 17.6121 7.5 17.0738 7.5C16.5355 7.5 16.0192 7.71385 15.6385 8.0945L8.10352 15.6295V18.5Z" stroke="#5E97FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="settings_infoline-area_action">
+                            <input type="text" value="95 the Pond Rd, North York ON, Canada" />
+                            <button class="settings_infoline-area_action__confirm">
+                                <img src="../img/settings_ico/check.svg" alt="Check">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="settings_col">
+                <div class="settings_inform">
+                    <p class="settings_inform-title">What information is needed</br> to make a job posting?</p>
+                    <p class="settings_inform-text">To create a job posting, you need to provide your name, email address, phone number and home address so that the geek can reach you!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer_area">
+            <div class="footer_item">
+                <p class="footer_title">Jobs</p>
+                <ul class="footer_menu">
+                    <li>
+                        <a href="#">Employee Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Employer Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Explore job categories</a>
+                    </li>
+                    <li>
+                        <a href="#">Explore jobs</a>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_item">
+                <p class="footer_title">Company</p>
+                <ul class="footer_menu">
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">How it works</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_item">
+                <p class="footer_title">Legal</p>
+                <ul class="footer_menu">
+                    <li>
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Help center</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_item">
+                <p class="footer_title">Mobile App</p>
+                <div class="footer_item-apparea">
+                    <a href="#" class="footer_item-apparea-ittem">
+                        <img src="../img/button/appstore_black.svg" alt="App Store">
+                    </a>
+                    <a href="#" class="footer_item-apparea-ittem">
+                        <img src="../img/button/googleplay_black.svg" alt="Google Play">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom row">
+            <p class="footer_copyright">2022 Geeks & gigs, Inc.</p>
+            <div class="row">
+                <p class="footer_currency">$  CAD</p>
+                <ul class="footer_social">
+                    <li>
+                        <a href=""><img src="../img/button/facebook.svg" alt="Facebook"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../img/button/instagram.svg" alt="Instagram"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../img/button/twitwer.svg" alt="Twitwer"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/packages/jquery1.12.4.min.js"></script>
+<script src="../js/packages/slick.min.js"></script>
+<script src="../js/packages/jquery-ui.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

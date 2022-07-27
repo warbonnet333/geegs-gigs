@@ -1,0 +1,348 @@
+/* Your job posting style */
+.jobposting {
+    margin-bottom: 90px;
+}
+.jobposting_area {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+}
+.jobposting_area-info {
+    width: 435px;
+}
+.jobposting_area-notification {
+    width: 430px;
+}
+.jobposting_area-image {
+    width: calc(100% - 865px);
+    position: relative;
+}
+.jobposting_area-image-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+}
+.jobposting_area-image-slider,
+.jobposting_area .slick-list {
+    width: 100%;
+    height: 100%;
+}
+.jobposting_area-image .slick-slide *{
+    line-height: 0;
+    width: 100%;
+    height: 100%;
+}
+.jobposting_area-image .slick-dots {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.jobposting_area-image .slick-dots button {
+    display: none;
+}
+.jobposting_area-image .slick-dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 7px;
+    opacity: 0.3;
+}
+.jobposting_area-image .slick-dots li.slick-active {
+    opacity: 1;
+}
+.jobposting_area-prise {
+    position: absolute;
+    border-radius: 25px;
+    background-color: #fff;
+    z-index: 2;
+    top: 12px;
+    right: 17px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.jobposting_area-prise-image {
+    width: 18px;
+    height: 20px;
+    margin-right: 5px;
+}
+.jobposting_area-prise-count {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+}
+.jobposting_area-info,
+.jobposting_area-notification {
+    position: relative;
+    padding: 20px;
+}
+.jobposting_area-info:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 20px;
+    right: 0;
+    width: 1px;
+    background-color:#D6D6D6;
+}
+.jobposting_area-title {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+    padding-bottom: 23px;
+}
+.jobposting_area-row {
+    border-top: 1px solid #D6D6D6;
+    padding-top: 15px;
+}
+.jobposting_area-row {
+    height: calc(100% - 45px);
+    display: flex;
+}
+.jobposting_area-col {
+    height: 100%;
+    padding-top:5px;
+}
+.jobposting_area-col:first-child {
+    padding-right: 18px;
+    width: calc(50% + 5px);
+}
+.jobposting_area-col:last-child {
+    padding-left: 18px;
+    width: calc(50% - 5px);
+}
+.col-right-line {
+    position: relative;
+}
+.col-right-line:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    background-color:#D6D6D6;
+}
+.jobposting_area-timework,
+.jobposting_area-adres {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000;
+    position: relative;
+    padding-left: 22px;
+    position: relative;
+}
+.jobposting_area-timework {
+    margin-bottom: 20px;
+}
+.jobposting_area-timework:after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: url('../img/ico/watch_ico.svg');
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 1px;
+}
+.jobposting_area-adres:after {
+    content: "";
+    width: 11px;
+    height: 16px;
+    background: url('../img/ico/adres_ico.svg');
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.jobposting_area-link {
+    background-color: #fff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 31px;
+    padding: 12px 20px 12px 40px;
+    position: relative;
+    margin-bottom: 30px;
+    transition: box-shadow 0.4s;
+}
+.jobposting_area-link:hover {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.35);
+}
+.jobposting_area-link:after{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: url('../img/ico/download_ico.webp');
+    background-size: 100% 100%;
+    position: absolute;
+    left: 15px;
+    top: calc(50% - 8px)
+}
+.jobposting_area-link-name {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+}
+.jobposting_area-link-count {
+    border: 2px solid #5E97FF;
+    background-color: #fff;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    line-height: 16px;
+    text-align: center;
+    font-family: 'Helvetica Neue';
+    font-weight: 700;
+    font-size: 13px;
+    color: #5E97FF;
+    display: block;
+    position: absolute;
+    top: -8px;
+    right: -7px;
+}
+.jobposting_area-data {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.4px;
+    color: #000;
+    opacity: 0.4;
+}
+.jobposting_area-notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.jobposting_area-showall {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 8px 16px;
+    background-color: #fff;
+    border: 2px solid #5E97FF;
+    border-radius: 40px;
+    color: #5E97FF;
+    display: inline-block;
+    margin-top: -6px;
+    transition: color 0.4s, background-color 0.4s;
+}
+.jobposting_area-showall:hover {
+    color: #fff;
+    background-color: #5E97FF;
+}
+.jobposting_notification-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+.jobposting_notification-image {
+    width: 39px;
+    height: 39px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.jobposting_notification-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.jobposting_notification-info {
+    width: calc(100% - 50px);
+}
+.jobposting_notification-name {
+    font-family: 'Helvetica Neue';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    margin-bottom: 6px;
+    opacity: 0.7;
+}
+.jobposting_notification-item:first-child {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #D6D6D6;
+}
+.jobposting_notification-item:first-child .jobposting_notification-name{
+    opacity: 1;
+}
+.jobposting_notification-date {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000;
+    opacity: 0.6;
+}
+.jobposting_notification-close {
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    cursor: pointer;
+    transition: fill 0.4s;
+}
+
+@media (max-width: 1290px) {
+    .jobposting_area {
+        flex-wrap: wrap;
+    }
+    .jobposting_area-image {
+        width: 349px;
+    }
+    .jobposting_area-notification {
+        width: 100%;
+    }
+    .jobposting_area-info {
+        width: calc(100% - 349px);
+    }
+}
+
+@media (max-width: 830px) {
+    .jobposting_area-image {
+        margin: 0 auto;
+    }
+    .jobposting_area-info {
+        width: 100%;
+    }
+    .jobposting_area-image-img {
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    .jobposting_area-row {
+        display: block;
+    }
+    .jobposting_area-col {
+        height: auto;
+    }
+    .jobposting_area-col:first-child {
+        padding-right: 0;
+        width: 100%;
+    }
+    .jobposting_area-col:last-child {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .jobposting_area-image {
+        width: 100%;
+    }
+}

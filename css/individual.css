@@ -1,0 +1,984 @@
+.individual-page {
+  background-color: #fff;
+}
+.individual-page .footer {
+  background-color: #F5F6FA;
+}
+
+.individual-wrapper {
+  display: grid;
+  grid-template-columns: 2.55fr 1fr;
+  grid-gap: 35px;
+}
+
+.pictures_section {
+  position: relative;
+  padding-top: 57px;
+  margin-bottom: 71px;
+}
+.pictures_section .section_title {
+  position: relative;
+  padding-right: 30px;
+  font-size: 33px;
+}
+.pictures_section .section_title--like {
+  position: absolute;
+  top: 20px;
+  transform: translateY(-50%);
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/ico/hart_ico.svg");
+  cursor: pointer;
+}
+.pictures_section .section_title--like.active {
+  background-image: url("../img/settings_ico/save_solid.svg");
+}
+.pictures_section--descr {
+  display: flex;
+  align-items: center;
+  margin-bottom: 37px;
+}
+.pictures_section--descr_item {
+  padding: 0 0px 0 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.4px;
+  position: relative;
+  margin-right: 38px;
+}
+.pictures_section--descr_item:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+}
+.pictures_section--descr_item.with-clock:before {
+  background-image: url("../img/ico/watch_ico.svg");
+}
+.pictures_section--descr_item.with-position:before {
+  background-image: url("../img/ico/adres_ico.svg");
+}
+.pictures_section--descr_item.with-requests:before {
+  background-image: url("../img/ico/request.svg");
+}
+.pictures_section--descr_theme {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
+  color: #262626;
+  padding: 8px 14px;
+  background: #F5F6FA;
+  border-radius: 50px;
+  display: inline-block;
+}
+.pictures_section--grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.pictures_section--grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pictures_section--grid_item {
+  overflow: hidden;
+}
+.pictures_section--grid .div1 {
+  grid-area: 1/1/3/3;
+}
+.pictures_section--grid .div2 {
+  grid-area: 1/3/2/4;
+}
+.pictures_section--grid .div3 {
+  grid-area: 2/3/3/4;
+}
+.pictures_section--grid .div4 {
+  grid-area: 1/4/3/6;
+}
+.pictures_section--grid_video {
+  position: absolute;
+  right: 17px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.4s;
+}
+.pictures_section--grid_video:hover {
+  transform: scale(1.1);
+}
+.pictures_section--grid_video img {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+
+.scope_section {
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  border-bottom: 0.5px solid #B9B9B9;
+}
+.scope_section .section_title {
+  margin-bottom: 21px;
+}
+.scope_section .scope_list--item {
+  padding-left: 45px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.2;
+  position: relative;
+  margin-bottom: 23px;
+}
+.scope_section .scope_list--item:last-of-type {
+  margin-bottom: 0;
+}
+.scope_section .scope_list--item_image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+.scope_section .scope_list--item_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.scope_section .scope_list--item-title {
+  margin-bottom: 5px;
+}
+.scope_section .scope_list--item_text {
+  font-weight: 400;
+  font-size: 15px;
+  opacity: 0.5;
+}
+
+.skills_section {
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  border-bottom: 0.5px solid #B9B9B9;
+}
+.skills_section .section_title {
+  margin-bottom: 19px;
+}
+.skills_section--top {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  grid-gap: 13px;
+  margin-bottom: 21px;
+}
+.skills_section--top_item {
+  padding: 12px 20px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
+  color: #262626;
+  background: #F5F6FA;
+  border-radius: 50px;
+}
+
+.schedule_section {
+  padding-bottom: 60px;
+  padding-right: 60px;
+  margin-bottom: 60px;
+  border-bottom: 0.5px solid #B9B9B9;
+  position: relative;
+}
+.schedule_section .section_title {
+  margin-bottom: 11px;
+  padding-right: 100px;
+}
+.schedule_section .schedule_descr {
+  font-family: "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.2;
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
+.schedule_section .schedule_datepicker {
+  max-width: 375px;
+  width: 100%;
+  padding-right: 34px;
+  border-right: 0.5px solid #D6D6D6;
+}
+.schedule_section .schedule_datepicker .ui-datepicker-header {
+  position: relative;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.schedule_section .schedule_datepicker .ui-datepicker-title {
+  font-size: 19px;
+  line-height: 1.2;
+  order: 2;
+}
+.schedule_section .schedule_datepicker .ui-datepicker-prev.ui-state-disabled {
+  background-image: url("../img/ico/left_ico.svg");
+  cursor: auto;
+}
+.schedule_section .schedule_datepicker .ui-datepicker-next.ui-state-disabled {
+  background-image: url("../img/ico/right_ico.svg");
+  cursor: auto;
+}
+.schedule_section .schedule_datepicker .ui-datepicker-prev {
+  position: static;
+  width: 14px;
+  height: 14px;
+  order: 1;
+  background-image: url("../img/ico/left_ico_black.svg");
+  background-size: contain;
+}
+.schedule_section .schedule_datepicker .ui-datepicker-next {
+  position: static;
+  width: 14px;
+  height: 14px;
+  order: 3;
+  background-image: url("../img/ico/right_ico_black.svg");
+  background-size: contain;
+}
+.schedule_section .schedule_datepicker .ui-datepicker-calendar {
+  width: 100%;
+}
+.schedule_section .schedule_datepicker .ui-datepicker-calendar thead span {
+  letter-spacing: -0.4px;
+  color: #000;
+  opacity: 0.4;
+  text-align: center;
+  margin-bottom: 0;
+  display: inline-block;
+  font-family: "San Francisco", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.schedule_section .schedule_datepicker .ui-datepicker-calendar tbody .ui-state-default {
+  border: 1px solid transparent;
+  font-family: "San Francisco", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  width: 41px;
+  height: 41px;
+}
+.schedule_section .schedule_datepicker .ui-datepicker-calendar tbody a.ui-state-default:hover,
+.schedule_section .schedule_datepicker .ui-datepicker-calendar tbody .ui-state-default.ui-state-active,
+.schedule_section .schedule_datepicker .ui-datepicker-calendar tbody .with-event a {
+  background: #F5F6FA;
+  color: #000;
+}
+.schedule_section .schedule_datepicker .ui-datepicker-calendar tbody .ui-state-default.ui-state-active {
+  border-color: #201F28;
+}
+.schedule_section .schedule_datepicker .ui-datepicker-calendar tbody .great-day a {
+  color: #000;
+  position: relative;
+}
+.schedule_section .schedule_datepicker .ui-datepicker-calendar tbody .great-day a:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 6px;
+  width: 5px;
+  height: 5px;
+  background: #5E97FF;
+  border-radius: 50%;
+}
+.schedule_section .schedule_datepicker--day {
+  padding: 53px 0 0 34px;
+  font-family: "San Francisco", sans-serif;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+.schedule_section .schedule_datepicker--day_name {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #353535;
+  margin-bottom: 12px;
+}
+.schedule_section .schedule_datepicker--day_slots {
+  margin-bottom: 20px;
+}
+.schedule_section .schedule_datepicker--day_slots .time_slot {
+  font-family: "San Francisco", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: lowercase;
+  max-width: 193px;
+  padding: 12px 14px;
+  background: #F5F6FA;
+  border-radius: 31px;
+  margin-bottom: 9px;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.schedule_section .schedule_datepicker--day_slots .time_slot:after {
+  display: none;
+  content: "";
+  width: 17px;
+  height: 17px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/ico/accept.svg");
+  background-color: #5E97FF;
+  border-radius: 50%;
+  border: 1.5px solid #FFFFFF;
+  margin-left: 6px;
+}
+.schedule_section .schedule_datepicker--day_slots .time_slot:hover {
+  background-color: #5E97FF;
+  color: #fff;
+}
+.schedule_section .schedule_datepicker--day_slots .time_slot.active {
+  background-color: #5E97FF;
+  color: #fff;
+}
+.schedule_section .schedule_datepicker--day_slots .time_slot.active:after {
+  display: block;
+}
+.schedule_section .schedule_datepicker--day .schedule_section--row {
+  margin-top: auto;
+}
+.schedule_section .schedule_datepicker--day .settings_button-blue {
+  margin-left: auto;
+  padding: 12px 24px;
+  border-radius: 13px;
+  transition: all 0.4s;
+  opacity: 1;
+}
+.schedule_section .schedule_datepicker--day .settings_button-blue:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.schedule_section--row {
+  display: flex;
+  justify-content: space-between;
+}
+.schedule_section--step:not(.active) {
+  display: none;
+}
+.schedule_section--step[data-schedule=range] .schedule_descr {
+  padding-right: 260px;
+  padding-bottom: 32px;
+  border-bottom: 0.5px solid #D6D6D6;
+  margin-bottom: 35px;
+}
+.schedule_section--step .schedule_range {
+  max-width: 464px;
+  max-height: 240px;
+  min-height: 240px;
+}
+.schedule_section--step .schedule_range--descr {
+  width: 176px;
+}
+.schedule_section--step .schedule_range--descr .selectric .label {
+  margin: 0 0 0 70px;
+  text-align: right;
+}
+.schedule_section--step .schedule_range--descr .selectric .button {
+  display: none;
+}
+.schedule_section--step .schedule_range--descr .selectric:after {
+  content: "$/hour";
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #000000;
+  transform: translateY(-50%);
+}
+.schedule_section--step .schedule_range--descr .range-wrap {
+  margin-bottom: 26px;
+}
+.schedule_section--step .schedule_range--descr .range_title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 8px;
+  display: block;
+}
+.schedule_section--step .schedule_range--descr .range_title.bold {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1;
+}
+.schedule_section--step .schedule_range--descr .settings_button-blue {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 13px;
+  transition: all 0.4s;
+  opacity: 1;
+  margin-top: 48px;
+}
+.schedule_section--step .schedule_range--descr .settings_button-blue:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.schedule_section--step .schedule_range--descr .range_input {
+  position: relative;
+}
+.schedule_section--step .schedule_range--descr .range_input input {
+  background: #fff;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 27px;
+  padding: 13px 18px;
+  width: 100%;
+  border: 1px solid transparent;
+  transition: all 0.4s;
+  text-align: right;
+  font-size: 15px;
+}
+.schedule_section--step .schedule_range--descr .range_input input::-webkit-outer-spin-button, .schedule_section--step .schedule_range--descr .range_input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.schedule_section--step .schedule_range--descr .range_input input[type=number] {
+  -moz-appearance: textfield;
+}
+.schedule_section--step .schedule_range--descr .range_input input::placeholder {
+  opacity: 0.2;
+}
+.schedule_section--step .schedule_range--descr .range_input:after {
+  content: "$/hour";
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #000000;
+  transform: translateY(-50%);
+  background: #fff;
+}
+.schedule_section--question {
+  position: absolute;
+  top: 0;
+  right: 24px;
+  width: 39px;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 21px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.schedule_section--question:hover {
+  transform: scale(1.1);
+}
+
+.location_section {
+  padding-bottom: 60px;
+}
+.location_section .location_descr {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  opacity: 0.5;
+  margin-bottom: 38px;
+}
+.location_section .location_map {
+  width: 100%;
+  height: 100%;
+}
+.location_section .location_map--wrap {
+  height: 317px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.location_section .location_map .gmnoprint,
+.location_section .location_map .gm-fullscreen-control,
+.location_section .location_map .gm-style-cc {
+  display: none;
+}
+
+.cart_section {
+  position: sticky;
+  top: 105px;
+  height: fit-content;
+  padding: 20px 0 60px;
+}
+.cart_section .user_categories {
+  padding: 25px;
+}
+.cart_section .user_categories--name {
+  margin-bottom: 9px;
+}
+.cart_section--data {
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid #D6D6D6;
+  margin-bottom: 15px;
+}
+.cart_section--data_item {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  color: #000000;
+  margin-bottom: 9px;
+  padding-left: 27px;
+  position: relative;
+}
+.cart_section--data_item:last-of-type {
+  margin-bottom: 0;
+}
+.cart_section--data_item:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+}
+.cart_section--data_item.with-identity:before {
+  background-image: url("../img/ico/identity.svg");
+}
+.cart_section--data_item.with-payment:before {
+  background-image: url("../img/ico/payment.svg");
+}
+.cart_section--data_item.with-deposit:before {
+  background-image: url("../img/ico/card-black.svg");
+}
+.cart_section--data_item.with-contacts:before {
+  background-image: url("../img/ico/phone-black.svg");
+}
+.cart_section--rate_title {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  margin-bottom: 8px;
+}
+.cart_section--rate_count {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 14px;
+}
+.cart_section--rate_count .money {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-right: 6px;
+}
+.cart_section--rate_count .money_descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.cart_section--estimate {
+  background: #FFFFFF;
+  border: 0.5px solid #8A8A8A;
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 19px;
+}
+.cart_section--estimate_item {
+  padding: 10px 11px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+.cart_section--estimate_item:first-of-type {
+  border-right: 0.5px solid #8A8A8A;
+}
+.cart_section--estimate_item .title {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+.cart_section--estimate_item .text {
+  font-size: 15px;
+  line-height: 1.2;
+}
+.cart_section--requests {
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  margin-bottom: 18px;
+}
+.cart_section .flex_row {
+  display: flex;
+  grid-gap: 9px;
+}
+.cart_section .flex_row:not(.active) {
+  display: none;
+}
+.cart_section .flex_row .settings_button-blue {
+  border-radius: 9px;
+  width: 100%;
+  padding: 14px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 1439px) {
+  .individual-wrapper {
+    grid-gap: 2.429vw;
+  }
+  .pictures_section {
+    padding-top: 3.9558vw;
+    margin-bottom: 4.9274vw;
+  }
+  .pictures_section .section_title {
+    padding-right: 2.082vw;
+    font-size: 2.2902vw;
+  }
+  .pictures_section .section_title--like {
+    top: 1.388vw;
+    width: 1.6656vw;
+    height: 1.6656vw;
+  }
+  .pictures_section--descr {
+    margin-bottom: 2.5678vw;
+  }
+  .pictures_section--descr_item {
+    padding: 0 0vw 0 1.6656vw;
+    font-size: 1.1104vw;
+    letter-spacing: -0.02776vw;
+    margin-right: 2.6372vw;
+  }
+  .pictures_section--descr_item:before {
+    width: 1.1104vw;
+    height: 1.1104vw;
+  }
+  .pictures_section--descr_theme {
+    font-size: 0.9716vw;
+    letter-spacing: -0.02776vw;
+    padding: 0.5552vw 0.9716vw;
+    border-radius: 3.47vw;
+  }
+  .pictures_section--grid {
+    grid-column-gap: 0.694vw;
+    grid-row-gap: 0.694vw;
+    border-radius: 0.694vw;
+  }
+  .pictures_section--grid_video {
+    right: 1.1798vw;
+    bottom: 1.388vw;
+    padding: 0.694vw 1.1104vw;
+    font-size: 1.041vw;
+    border-radius: 1.735vw;
+  }
+  .pictures_section--grid_video img {
+    width: 1.2492vw;
+    height: 1.2492vw;
+    margin-right: 0.4164vw;
+  }
+  .scope_section {
+    padding-bottom: 4.164vw;
+    margin-bottom: 4.164vw;
+    border-bottom: 0.5px solid #B9B9B9;
+  }
+  .scope_section .section_title {
+    margin-bottom: 1.4574vw;
+  }
+  .scope_section .scope_list--item {
+    padding-left: 3.123vw;
+    font-size: 1.3186vw;
+    margin-bottom: 1.5962vw;
+  }
+  .scope_section .scope_list--item_image {
+    width: 2.082vw;
+    height: 2.082vw;
+  }
+  .scope_section .scope_list--item-title {
+    margin-bottom: 0.347vw;
+  }
+  .scope_section .scope_list--item_text {
+    font-size: 1.041vw;
+  }
+  .skills_section {
+    padding-bottom: 4.164vw;
+    margin-bottom: 4.164vw;
+    border-bottom: 0.5px solid #B9B9B9;
+  }
+  .skills_section .section_title {
+    margin-bottom: 1.3186vw;
+  }
+  .skills_section--top {
+    grid-gap: 0.9022vw;
+    margin-bottom: 1.4574vw;
+  }
+  .skills_section--top_item {
+    padding: 0.8328vw 1.388vw;
+    font-size: 1.041vw;
+    letter-spacing: -0.02776vw;
+    border-radius: 3.47vw;
+  }
+  .schedule_section {
+    padding-bottom: 4.164vw;
+    padding-right: 4.164vw;
+    margin-bottom: 4.164vw;
+    border-bottom: 0.5px solid #B9B9B9;
+  }
+  .schedule_section .section_title {
+    margin-bottom: 0.7634vw;
+    padding-right: 6.94vw;
+  }
+  .schedule_section .schedule_descr {
+    font-size: 1.1798vw;
+    margin-bottom: 2.082vw;
+  }
+  .schedule_section .schedule_datepicker {
+    max-width: 26.025vw;
+    padding-right: 2.3596vw;
+    border-right: 0.5px solid #D6D6D6;
+  }
+  .schedule_section .schedule_datepicker .ui-datepicker-header {
+    margin-bottom: 2.082vw;
+  }
+  .schedule_section .schedule_datepicker .ui-datepicker-title {
+    font-size: 1.3186vw;
+  }
+  .schedule_section .schedule_datepicker .ui-datepicker-prev {
+    width: 0.9716vw;
+    height: 0.9716vw;
+  }
+  .schedule_section .schedule_datepicker .ui-datepicker-next {
+    width: 0.9716vw;
+    height: 0.9716vw;
+  }
+  .schedule_section .schedule_datepicker .ui-datepicker-calendar thead span {
+    letter-spacing: -0.02776vw;
+    font-size: 0.9716vw;
+    line-height: 1.1798vw;
+  }
+  .schedule_section .schedule_datepicker .ui-datepicker-calendar tbody .ui-state-default {
+    border: 1px solid transparent;
+    font-size: 1.1104vw;
+    width: 2.8454vw;
+    height: 2.8454vw;
+  }
+  .schedule_section .schedule_datepicker .ui-datepicker-calendar tbody .great-day a:after {
+    bottom: 0.4164vw;
+    width: 0.347vw;
+    height: 0.347vw;
+  }
+  .schedule_section .schedule_datepicker--day {
+    padding: 3.6782vw 0 0 2.3596vw;
+  }
+  .schedule_section .schedule_datepicker--day_name {
+    font-size: 1.1104vw;
+    margin-bottom: 0.8328vw;
+  }
+  .schedule_section .schedule_datepicker--day_slots {
+    margin-bottom: 1.388vw;
+  }
+  .schedule_section .schedule_datepicker--day_slots .time_slot {
+    font-size: 1.1104vw;
+    max-width: 13.3942vw;
+    padding: 0.8328vw 0.9716vw;
+    border-radius: 2.1514vw;
+    margin-bottom: 0.6246vw;
+  }
+  .schedule_section .schedule_datepicker--day_slots .time_slot:after {
+    width: 1.1798vw;
+    height: 1.1798vw;
+    border: 0.1041vw solid #FFFFFF;
+    margin-left: 0.4164vw;
+  }
+  .schedule_section .schedule_datepicker--day .settings_button-blue {
+    padding: 0.8328vw 1.6656vw;
+    border-radius: 0.9022vw;
+  }
+  .schedule_section--step[data-schedule=range] .schedule_descr {
+    padding-right: 18.044vw;
+    padding-bottom: 2.2208vw;
+    border-bottom: 0.5px solid #D6D6D6;
+    margin-bottom: 2.429vw;
+  }
+  .schedule_section--step .schedule_range {
+    max-width: 32.2016vw;
+    max-height: 16.656vw;
+    min-height: 16.656vw;
+  }
+  .schedule_section--step .schedule_range--descr {
+    width: 12.2144vw;
+  }
+  .schedule_section--step .schedule_range--descr .selectric .label {
+    margin: 0 0 0 4.858vw;
+  }
+  .schedule_section--step .schedule_range--descr .selectric:after {
+    left: 1.2492vw;
+    font-size: 1.041vw;
+  }
+  .schedule_section--step .schedule_range--descr .range-wrap {
+    margin-bottom: 1.8044vw;
+  }
+  .schedule_section--step .schedule_range--descr .range_title {
+    font-size: 0.9716vw;
+    line-height: 1.3186vw;
+    margin-bottom: 0.5552vw;
+  }
+  .schedule_section--step .schedule_range--descr .range_title.bold {
+    font-size: 1.3186vw;
+  }
+  .schedule_section--step .schedule_range--descr .settings_button-blue {
+    padding: 0.8328vw 1.6656vw;
+    border-radius: 0.9022vw;
+    margin-top: 3.3312vw;
+  }
+  .schedule_section--step .schedule_range--descr .range_input input {
+    box-shadow: 0vw 0vw 1.1104vw rgba(0, 0, 0, 0.1);
+    border-radius: 1.8738vw;
+    padding: 0.9022vw 1.2492vw;
+    font-size: 1.041vw;
+    outline: none;
+  }
+  .schedule_section--step .schedule_range--descr .range_input:after {
+    left: 1.2492vw;
+    font-size: 1.041vw;
+  }
+  .schedule_section--question {
+    right: 1.6656vw;
+    width: 2.7066vw;
+    height: 2.7066vw;
+    font-size: 1.5268vw;
+    line-height: 1.4574vw;
+    box-shadow: 0vw 0vw 1.1104vw rgba(0, 0, 0, 0.1);
+  }
+  .location_section {
+    padding-bottom: 4.164vw;
+  }
+  .location_section .location_descr {
+    font-size: 1.2492vw;
+    margin-bottom: 2.6372vw;
+  }
+  .location_section .location_map--wrap {
+    height: 21.9998vw;
+    border-radius: 0.694vw;
+  }
+  .cart_section {
+    top: 7.287vw;
+    padding: 1.388vw 0 4.164vw;
+  }
+  .cart_section .user_categories {
+    padding: 1.735vw;
+  }
+  .cart_section .user_categories--name {
+    margin-bottom: 0.6246vw;
+  }
+  .cart_section--data {
+    padding-bottom: 1.388vw;
+    border-bottom: 0.5px solid #D6D6D6;
+    margin-bottom: 1.041vw;
+  }
+  .cart_section--data_item {
+    font-size: 1.041vw;
+    margin-bottom: 0.6246vw;
+    padding-left: 1.8738vw;
+  }
+  .cart_section--data_item:before {
+    width: 1.2492vw;
+    height: 1.2492vw;
+    top: -0.0694vw;
+  }
+  .cart_section--rate_title {
+    font-size: 1.041vw;
+    letter-spacing: -0.02776vw;
+    margin-bottom: 0.5552vw;
+  }
+  .cart_section--rate_count {
+    margin-bottom: 0.9716vw;
+  }
+  .cart_section--rate_count .money {
+    font-size: 1.735vw;
+    margin-right: 0.4164vw;
+  }
+  .cart_section--rate_count .money_descr {
+    font-size: 1.1104vw;
+  }
+  .cart_section--estimate {
+    border: 0.5px solid #8A8A8A;
+    border-radius: 0.4164vw;
+    margin-bottom: 1.3186vw;
+  }
+  .cart_section--estimate_item {
+    padding: 0.694vw 0.7634vw;
+  }
+  .cart_section--estimate_item:first-of-type {
+    border-right: 0.5px solid #8A8A8A;
+  }
+  .cart_section--estimate_item .title {
+    font-size: 0.694vw;
+    margin-bottom: 0.2082vw;
+  }
+  .cart_section--estimate_item .text {
+    font-size: 1.041vw;
+  }
+  .cart_section--requests {
+    font-size: 1.041vw;
+    letter-spacing: -0.02776vw;
+    margin-bottom: 1.2492vw;
+  }
+  .cart_section .flex_row {
+    grid-gap: 0.6246vw;
+  }
+  .cart_section .flex_row .settings_button-blue {
+    border-radius: 0.6246vw;
+    padding: 0.9716vw;
+    font-size: 1.041vw;
+  }
+}
+
+/*# sourceMappingURL=individual.css.map */

@@ -1,0 +1,125 @@
+.settings-page {
+  padding-top: 205px;
+  background: #fff;
+}
+.settings-page .footer {
+  background: #F5F6FA;
+}
+.settings-page .settingsmain {
+  padding-top: 0;
+}
+.settings-page .settings {
+  padding-top: 0;
+}
+.settings-page .gigs_list {
+  margin-top: 50px;
+}
+.settings-page.my-profile-page {
+  background: #F5F6FA;
+}
+.settings-page.my-profile-page .profile-wrapper {
+  padding-top: 0;
+}
+.settings-page.my-profile-page .footer {
+  background: #fff;
+}
+.settings-page .profile__details_address {
+  position: relative;
+}
+.settings-page .profile__details_address.editing .add-field {
+  display: block;
+}
+.settings-page .profile__details_address .add-field {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  background-color: #5E97FF;
+  cursor: pointer;
+  background-image: url("../../img/ico/plus-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border: none;
+}
+.settings-page .profile__main_header_img {
+  position: relative;
+}
+.settings-page .profile__main_header_img .person-img {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: url("../../img/ico/pen-black.svg");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #000000;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.settings-page .profile__main_header_img .person-img.active {
+  display: block;
+}
+.settings-page .profile__main_header_img .person-img input {
+  display: none;
+}
+.settings-page .profile__main_footer {
+  height: 100%;
+}
+.settings-page .profile__main_footer .settings_button-blue,
+.settings-page .profile__main_footer .__edit_profile {
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: auto;
+}
+
+@media only screen and (max-width: 1439px) {
+  .settings-page {
+    padding-top: 14.227vw;
+  }
+  .settings .container {
+    max-width: 79.116vw;
+  }
+  .settings {
+    padding-top: 4.858vw;
+    padding-bottom: 6.94vw;
+  }
+  .settings .container {
+    max-width: 1140px;
+  }
+  .settings_breadcrumbs {
+    padding-bottom: 1.041vw;
+  }
+  .settings_breadcrumbs li {
+    padding-left: 0.694vw;
+  }
+  .settings_breadcrumbs a {
+    font-size: 1.1798vw;
+    line-height: 1.4574vw;
+  }
+  .settings_breadcrumbs a:after {
+    padding-left: 0.694vw;
+  }
+  .settings_title {
+    font-size: 2.7066vw;
+    line-height: 3.3312vw;
+    padding-bottom: 0.347vw;
+  }
+  .settings_subtitle {
+    font-size: 1.735vw;
+    line-height: 2.082vw;
+    padding-bottom: 2.776vw;
+  }
+  .gigs_list {
+    margin-top: 3.47vw;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
