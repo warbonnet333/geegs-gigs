@@ -10,6 +10,15 @@ body {
   overflow-x: hidden;
 }
 
+.logo_img {
+  circle {
+    fill: $blue;
+  }
+  path {
+    fill: #fff;
+  }
+}
+
 .shadow-item {
   position: relative;
   background: #FFFFFF;
