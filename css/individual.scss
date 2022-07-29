@@ -267,6 +267,16 @@ $px: 0.0694;
   border-bottom: 0.5px solid #B9B9B9;
   position: relative;
 
+  &.popups_item {
+    position: fixed;
+    width: 775px;
+    padding: 30px 25px 50px 50px;
+
+    .schedule_datepicker--day .schedule_section--row {
+      margin-bottom: -25px;
+    }
+  }
+
   .section_title {
     margin-bottom: 11px;
     padding-right: 100px;
@@ -612,7 +622,7 @@ $px: 0.0694;
 
   &--question {
     position: absolute;
-    top: 0;
+    top: 30px;
     right: 24px;
     width: 39px;
     height: 39px;
@@ -952,6 +962,15 @@ $px: 0.0694;
     margin-bottom: 60vw * $px;
     border-bottom: 0.5px solid #B9B9B9;
 
+    &.popups_item {
+      width: 775vw * $px;
+      padding: 30vw * $px 25vw * $px 50vw * $px 50vw * $px;
+
+      .schedule_datepicker--day .schedule_section--row {
+        margin-bottom: -25vw * $px;
+      }
+    }
+
     .section_title {
       margin-bottom: 11vw * $px;
       padding-right: 100vw * $px;
@@ -1115,6 +1134,7 @@ $px: 0.0694;
     }
 
     &--question {
+      top: 30vw * $px;
       right: 24vw * $px;
       width: 39vw * $px;
       height: 39vw * $px;

@@ -233,7 +233,7 @@
         </div>
 
         <div id="availability" class="schedule_section">
-            <div class="schedule_section--step active" data-schedule="date">
+            <div class="schedule_section--step active">
                 <div class="section_title">7 available dates ∙ 12 time slots</div>
                 <div class="schedule_descr">July 8, 10, 12-14, 18, 21</div>
                 <div class="schedule_section--row">
@@ -244,48 +244,9 @@
                             <div class="time_slot js-slot-item">7:00am - 8:00am</div>
                             <div class="time_slot js-slot-item">7:30am - 8:30am</div>
                         </div>
-                        <div class="schedule_section--row">
-                            <button disabled class="settings_button-blue js-slot-chosen">Select time slot</button>
-                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="schedule_section--step" data-schedule="range">
-                <div class="section_title">Choose a price based on the provided range</div>
-                <div class="schedule_descr">
-                    The client will see your available date and the pricing point at which you would solve their tech
-                    problem
-                </div>
-                <div class="schedule_section--row">
-                    <canvas class="schedule_range js-schedule-range"></canvas>
-                    <div class="schedule_range--descr">
-                        <div class="range-wrap">
-                            <div class="range_title">Price range</div>
-                            <div class="range_select">
-                                <select name="sort-select" id="range-select">
-                                    <option value="5-8-13-15">5 - 15</option>
-                                    <option value="15-18-23-25" selected>15 - 25</option>
-                                    <option value="25-28-32-35">25 - 35</option>
-                                    <option value="35-38-43-45">35 - 45</option>
-                                    <option value="45-48-53-55">45 - 45</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="range-wrap">
-                            <label for="range_input" class="range_title bold">Your price</label>
-                            <div class="range_input">
-                                <input id="range_input" type="number" value="" placeholder="15">
-                            </div>
-                        </div>
-                        <div class="schedule_section--row">
-                            <button disabled class="settings_button-blue js-range-changed">Select a price</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <btn class="schedule_section--question js-schedule-question">?</btn>
         </div>
 
         <div id="location" class="location_section">
@@ -334,7 +295,7 @@
             <div class="cart_section--requests">Your available requests: 5</div>
 
             <div class="flex_row active">
-                <div class="settings_button-blue solid">Request</div>
+                <div class="settings_button-blue solid js-open-popup" data-popup-trigger="edit-request-popup">Request</div>
             </div>
 
             <div class="flex_row">
@@ -343,6 +304,67 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="popups">
+    <div class="popups_backdrop js-popup-backdrop"></div>
+
+    <div class="schedule_section popups_item js-popup" data-popup-target="edit-request-popup">
+        <div class="schedule_section--step active" data-schedule="date">
+            <div class="section_title">7 available dates ∙ 12 time slots</div>
+            <div class="schedule_descr">July 8, 10, 12-14, 18, 21</div>
+            <div class="schedule_section--row">
+                <div class="schedule_datepicker js-schedule-datepicker"></div>
+                <div class="schedule_datepicker--day">
+                    <div class="schedule_datepicker--day_name js-date-string">Saturday, 8 July</div>
+                    <div class="schedule_datepicker--day_slots">
+                        <div class="time_slot js-slot-item">7:00am - 8:00am</div>
+                        <div class="time_slot js-slot-item">7:30am - 8:30am</div>
+                    </div>
+                    <div class="schedule_section--row">
+                        <button disabled class="settings_button-blue js-slot-chosen" data-schedule="range">Select time slot</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="schedule_section--step" data-schedule="range">
+            <div class="section_title">Choose a price based on the provided range</div>
+            <div class="schedule_descr">
+                The client will see your available date and the pricing point at which you would solve their tech
+                problem
+            </div>
+            <div class="schedule_section--row">
+                <canvas class="schedule_range js-schedule-range"></canvas>
+                <div class="schedule_range--descr">
+                    <div class="range-wrap">
+                        <div class="range_title">Price range</div>
+                        <div class="range_select">
+                            <select class="js-range-select" name="sort-select">
+                                <option value="5-8-13-15">5 - 15</option>
+                                <option value="15-18-23-25" selected>15 - 25</option>
+                                <option value="25-28-32-35">25 - 35</option>
+                                <option value="35-38-43-45">35 - 45</option>
+                                <option value="45-48-53-55">45 - 45</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="range-wrap">
+                        <label for="range_input_popup" class="range_title bold">Your price</label>
+                        <div class="range_input">
+                            <input class="js-range-input" id="range_input_popup" type="number" value="" placeholder="15">
+                        </div>
+                    </div>
+                    <div class="schedule_section--row">
+                        <button disabled class="settings_button-blue js-range-changed" data-schedule="date">Select a price</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <btn class="schedule_section--question js-schedule-question">?</btn>
+    </div>
+
 </div>
 
 <footer class="footer">

@@ -15,9 +15,11 @@ class IndividualPage {
     };
 
     initEvents() {
+        $(document).on('click', '.js-open-popup', this.openPopup.bind(this));
+        $(document).on('click', '.js-popup-backdrop, .js-close-popup, .js-range-changed', this.closePopup.bind(this));
         $(document).on('click', '.js-slot-item', this.onSlotClick);
-        $(document).on('input', '#range_input', this.onRangeChange);
-        $(document).on('click', '.js-slot-chosen', this.showPriceRange);
+        $(document).on('input', '.js-range-input', this.onRangeChange);
+        $(document).on('click', '.js-slot-chosen, .js-range-changed', this.togglePriceRange);
         $(document).on('click', '.js-like-btn', this.onLikeClick);
         $(document).on('click', '.js-fixed-link', this.onNavClick);
         $(document).on('click', '.user_categories .settings_button-blue', this.onRequest);
@@ -67,9 +69,11 @@ class IndividualPage {
         $btn.attr('disabled', !target);
     }
 
-    showPriceRange() {
-        $('.schedule_section--step.active').removeClass('active');
-        $('.schedule_section--step[data-schedule="range"]').addClass('active');
+    togglePriceRange(e) {
+        const parent = e.currentTarget.closest('.schedule_section');
+        const {schedule} = e.currentTarget.dataset;
+        $(parent).find('.schedule_section--step.active').removeClass('active');
+        $(parent).find(`.schedule_section--step[data-schedule="${schedule}"]`).addClass('active');
     }
 
     // schedule_section--step
@@ -229,7 +233,7 @@ class IndividualPage {
     }
 
     initRangeSelect() {
-        const $select = $('#range-select');
+        const $select = $('.js-range-select');
         $select.selectric({
             inheritOriginalWidth: false,
             nativeOnMobile: true,
@@ -262,6 +266,18 @@ class IndividualPage {
         document.head.appendChild(script);
     }
 
+    openPopup(e) {
+        const btn = e.currentTarget;
+        const {popupTrigger = null} = btn.dataset;
+        if (!popupTrigger) return;
+        const target = document.querySelector(`.js-popup[data-popup-target="${popupTrigger}"]`);
+        target && target.classList.add('active'), toggleBackdrop(true);
+    }
+
+    closePopup() {
+        const target = document.querySelector('.js-popup.active');
+        target && target.classList.remove('active'), toggleBackdrop(false);
+    }
 
 }
 
