@@ -150,7 +150,8 @@
                     <div class="settingspayments_infoline-card">
                         <img src="../img/settings_ico/mastercard_ico.webp" alt="Mastercard">
                     </div>
-                    <p class="settings_infoline-title">Mastercard •••• 1567<span class="settingspayments_infoline-default">DEFAULT</span></p>
+                    <p class="settings_infoline-title">Mastercard •••• 1567<span
+                            class="settingspayments_infoline-default">DEFAULT</span></p>
                     <div class="settings_infoline-area">
                         <p class="settings_infoline-value">Expiration 01/2025</p>
                         <a href="#" class="settings_button-blue __edit-payment">Edit</a>
@@ -244,7 +245,7 @@
         <div class="footer_bottom row">
             <p class="footer_copyright">2022 Geeks & gigs, Inc.</p>
             <div class="row">
-                <p class="footer_currency">$  CAD</p>
+                <p class="footer_currency">$ CAD</p>
                 <ul class="footer_social">
                     <li>
                         <a href=""><img src="../img/button/facebook.svg" alt="Facebook"></a>
@@ -325,7 +326,18 @@
     </div>
     <div class="add_card_details">
         <h2 class="add_card_details__title">Add card details</h2>
-        <div class="add_card_details__credit_card"></div>
+        <form class="add_card_details__credit_card js-add-form">
+            <input id="cardName" name="cardName" value="" type="text" placeholder="Sam Smith">
+            <input id="cardNumber" name="cardNumber" value="" type="text" placeholder="1234 5678 9012 3456">
+            <div class="add_card_details_row">
+                <input id="expireDate" name="expireDate" value="" type="text" placeholder="12/25">
+                <input id="cvv" name="cvv" value="" type="text" placeholder="234">
+            </div>
+            <div class="add_card_details--type visa-card">
+                <img src="../img/ico/cart-ico-mastercard.svg" alt="">
+                <img src="../img/ico/cart-ico-visa.svg" alt="">
+            </div>
+        </form>
         <div class="add_card_details__inputs">
             <input type="text" placeholder="Postal code">
             <input type="text" placeholder="Country">
@@ -350,5 +362,6 @@
 <script src="../js/packages/slick.min.js"></script>
 <script src="../js/packages/jquery-ui.min.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/settings.js"></script>
 </body>
 </html>

@@ -80,6 +80,61 @@
   margin-top: auto;
 }
 
+.add_card_details {
+  position: relative;
+}
+.add_card_details__credit_card {
+  padding: 32px 84px 27px 27px;
+  background: radial-gradient(69.03% 142.7% at 76.67% 43.36%, #5E97FF 27.08%, #B8ACFF 100%);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 17px;
+  height: 226px;
+  width: 360px;
+}
+.add_card_details input {
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+.add_card_details input::placeholder {
+  color: #fff;
+  opacity: 0.8;
+}
+.add_card_details #cardName {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 54px;
+}
+.add_card_details #cardNumber {
+  font-size: 23px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  max-width: 250px;
+}
+.add_card_details #expireDate,
+.add_card_details #cvv {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 42px;
+}
+.add_card_details_row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 13px;
+  max-width: 250px;
+}
+.add_card_details--type {
+  position: absolute;
+  bottom: 22px;
+  right: 20px;
+  width: 64px;
+  height: 20px;
+}
+
 @media only screen and (max-width: 1439px) {
   .settings-page {
     padding-top: 14.227vw;
