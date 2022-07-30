@@ -51,7 +51,7 @@ class Settings {
             return;
         }
 
-        this.onCloseForm();
+        this.onCloseForm(null, false);
     }
 
     addWithdraw(e) {
@@ -167,7 +167,7 @@ class Settings {
             status: this.status + 'Success'
         }
 
-
+console.log(data)
         for (let i = 0; i < valueData.length; i++) {
             if (!valueData[i]) {
                 this.showErrorPopup(errText);
@@ -208,15 +208,22 @@ class Settings {
 
     addCartToList(data) {
         const list = $('.js-card-list');
-        const markup = getMarkup({...data, isDefault: list.children.length});
+        console.log(list);
+        console.log(list.children());
+        console.log(!list.children().length);
+        const markup = getMarkup({...data, isDefault: !list.children().length});
         list.append(markup);
     }
 
-    onCloseForm() {
+    onCloseForm(e, deleteItem = true) {
         $('.modal').removeClass('show');
-        $('.settings_infoline.editing').removeClass('editing');
+        const $item = $('.settings_infoline.editing');
+        deleteItem
+            ? $item.remove()
+            : $item.removeClass('editing');
         this.status = 'adding' && this.clearFields();
         this.status = '';
+
     }
 
     clearFields() {
@@ -225,7 +232,8 @@ class Settings {
 
     replaceListItem(data) {
         const itemToEdit = $('.settings_infoline.editing');
-        itemToEdit[0].outerHTML = getMarkup(data);
+        const isDefault = itemToEdit.find('.settingspayments_infoline-default').length;
+        itemToEdit[0].outerHTML = getMarkup({...data, isDefault});
     }
 
 }

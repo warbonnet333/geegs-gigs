@@ -127,7 +127,6 @@ $( document ).ready(function() {
     //Show modal
     $('.__view_hostory, .__edit-payment, .__add-payment, .__view_faqs').on('click', function (e) {
         $('.modal').toggleClass('show');
-        console.log(1);
         if($('.__view_hostory').is(e.target)){
             $('.history_payment').css('display', 'flex');
         }else if($('.__edit-payment').is(e.target)){

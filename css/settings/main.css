@@ -224,6 +224,10 @@
   display: none !important;
 }
 
+datalist {
+  display: none;
+}
+
 @media only screen and (max-width: 1439px) {
   .settings-page {
     padding-top: 14.227vw;
