@@ -108,40 +108,77 @@ $px: 0.0694;
 .add_card_details {
   position: relative;
 
+  &.edit-form {
+    .add-content {
+      display: none;
+    }
+
+    .edit-content {
+      display: block;
+    }
+  }
+
+  &.add-form {
+    .add-content {
+      display: block;
+    }
+
+    .edit-content {
+      display: none;
+    }
+  }
+
   &__credit_card {
     padding: 32px 84px 27px 27px;
     background: radial-gradient(69.03% 142.7% at 76.67% 43.36%, #5E97FF 27.08%, #B8ACFF 100%);
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
     border-radius: 17px;
     height: 226px;
-    width: 360px;
-  }
+    min-width: 360px;
+    position: relative;
 
-  input {
-    border: none;
-    background: transparent;
-    color: #fff;
-    padding: 5px;
-    font-family: 'Montserrat', sans-serif;
-
-    &::placeholder {
+    input {
+      border: none;
+      background: transparent;
       color: #fff;
-      opacity: 0.8;
+      font-family: 'Montserrat', sans-serif;
+
+      &::placeholder {
+        color: #fff;
+        opacity: 0.8;
+      }
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      &[type=number] {
+        -moz-appearance: textfield;
+      }
     }
+
   }
 
   #cardName {
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
-    margin-bottom: 54px;
+    margin-bottom: 44px;
   }
 
   #cardNumber {
     font-size: 23px;
     line-height: 28px;
     letter-spacing: 0.05em;
-    max-width: 250px;
+    max-width: 270px;
+
+    &::placeholder {
+      font-size: 23px;
+      line-height: 28px;
+      letter-spacing: 0.05em;
+    }
   }
 
   #expireDate,
@@ -149,14 +186,18 @@ $px: 0.0694;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    max-width: 42px;
+    max-width: 45px;
+  }
+
+  #cvv {
+    text-align: right;
   }
 
   &_row {
     display: flex;
     justify-content: space-between;
     margin-top: 13px;
-    max-width: 250px;
+    max-width: 270px;
   }
 
   &--type {
@@ -165,8 +206,84 @@ $px: 0.0694;
     right: 20px;
     width: 64px;
     height: 20px;
+
+    .mastercard, .visa {
+      display: none;
+    }
+
+    &[data-type="visa"] {
+      .mastercard {
+        display: none;
+      }
+
+      .visa {
+        display: block;
+      }
+    }
+
+    &[data-type="mastercard"] {
+      .mastercard {
+        display: block;
+      }
+
+      .visa {
+        display: none;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 
+  .reject-btn {
+    background: transparent;
+    border: 2px solid #5E97FF;
+    color: $blue;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: $blue;
+      color: #fff;
+    }
+  }
+
+  .resolve-btn {
+    background: $blue;
+    border: 2px solid $blue;
+    color: #fff;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: #fff;
+      color: $blue;
+    }
+  }
+
+}
+
+.modal-backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block !important;
+  z-index: -1;
+}
+
+.__error_process,
+.__successfully_process {
+  display: flex !important;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  &:not(.active) {
+    display: none !important;
+  }
 }
 
 @media only screen and (max-width: 1439px) {

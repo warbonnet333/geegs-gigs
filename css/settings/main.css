@@ -83,49 +83,76 @@
 .add_card_details {
   position: relative;
 }
+.add_card_details.edit-form .add-content {
+  display: none;
+}
+.add_card_details.edit-form .edit-content {
+  display: block;
+}
+.add_card_details.add-form .add-content {
+  display: block;
+}
+.add_card_details.add-form .edit-content {
+  display: none;
+}
 .add_card_details__credit_card {
   padding: 32px 84px 27px 27px;
   background: radial-gradient(69.03% 142.7% at 76.67% 43.36%, #5E97FF 27.08%, #B8ACFF 100%);
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
   border-radius: 17px;
   height: 226px;
-  width: 360px;
+  min-width: 360px;
+  position: relative;
 }
-.add_card_details input {
+.add_card_details__credit_card input {
   border: none;
   background: transparent;
   color: #fff;
-  padding: 5px;
   font-family: "Montserrat", sans-serif;
 }
-.add_card_details input::placeholder {
+.add_card_details__credit_card input::placeholder {
   color: #fff;
   opacity: 0.8;
+}
+.add_card_details__credit_card input::-webkit-outer-spin-button, .add_card_details__credit_card input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.add_card_details__credit_card input[type=number] {
+  -moz-appearance: textfield;
 }
 .add_card_details #cardName {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  margin-bottom: 54px;
+  margin-bottom: 44px;
 }
 .add_card_details #cardNumber {
   font-size: 23px;
   line-height: 28px;
   letter-spacing: 0.05em;
-  max-width: 250px;
+  max-width: 270px;
+}
+.add_card_details #cardNumber::placeholder {
+  font-size: 23px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
 }
 .add_card_details #expireDate,
 .add_card_details #cvv {
   font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  max-width: 42px;
+  max-width: 45px;
+}
+.add_card_details #cvv {
+  text-align: right;
 }
 .add_card_details_row {
   display: flex;
   justify-content: space-between;
   margin-top: 13px;
-  max-width: 250px;
+  max-width: 270px;
 }
 .add_card_details--type {
   position: absolute;
@@ -133,6 +160,68 @@
   right: 20px;
   width: 64px;
   height: 20px;
+}
+.add_card_details--type .mastercard, .add_card_details--type .visa {
+  display: none;
+}
+.add_card_details--type[data-type=visa] .mastercard {
+  display: none;
+}
+.add_card_details--type[data-type=visa] .visa {
+  display: block;
+}
+.add_card_details--type[data-type=mastercard] .mastercard {
+  display: block;
+}
+.add_card_details--type[data-type=mastercard] .visa {
+  display: none;
+}
+.add_card_details--type img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.add_card_details .reject-btn {
+  background: transparent;
+  border: 2px solid #5E97FF;
+  color: #5E97FF;
+  transition: all 0.4s;
+}
+.add_card_details .reject-btn:hover {
+  background-color: #5E97FF;
+  color: #fff;
+}
+.add_card_details .resolve-btn {
+  background: #5E97FF;
+  border: 2px solid #5E97FF;
+  color: #fff;
+  transition: all 0.4s;
+}
+.add_card_details .resolve-btn:hover {
+  background-color: #fff;
+  color: #5E97FF;
+}
+
+.modal-backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block !important;
+  z-index: -1;
+}
+
+.__error_process,
+.__successfully_process {
+  display: flex !important;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.__error_process:not(.active),
+.__successfully_process:not(.active) {
+  display: none !important;
 }
 
 @media only screen and (max-width: 1439px) {

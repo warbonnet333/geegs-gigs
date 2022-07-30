@@ -127,6 +127,7 @@ $( document ).ready(function() {
     //Show modal
     $('.__view_hostory, .__edit-payment, .__add-payment, .__view_faqs').on('click', function (e) {
         $('.modal').toggleClass('show');
+        console.log(1);
         if($('.__view_hostory').is(e.target)){
             $('.history_payment').css('display', 'flex');
         }else if($('.__edit-payment').is(e.target)){
@@ -140,6 +141,7 @@ $( document ).ready(function() {
     //Hide modal
     $('.modal').on('click', function (e) {
         if(e.target === this){
+            console.log(2)
             $('.modal').toggleClass('show');
             $(this).children().each(function(){
                 $(this).css('display', 'none');
@@ -149,6 +151,7 @@ $( document ).ready(function() {
 
     $('.add_card_details__btns_reject, .edit_card_details__btns_reject').on('click', function(e){
         e.preventDefault();
+        console.log(3)
         $('.modal').toggleClass('show');
         $('.modal').children().each(function(){
             $(this).css('display', 'none');
